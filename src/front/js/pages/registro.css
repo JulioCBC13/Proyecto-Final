@@ -1,16 +1,15 @@
 .contenedor {
-  height: 300px;
+  height: 340px;
   width: 414px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  padding: 20px;
   padding-bottom: 0px;
   box-sizing: content-box;
   color: white;
   border-radius: 10px;
 }
 
-#email,
 #password {
   padding-top: 10px;
   color: black;
@@ -18,4 +17,15 @@
 
 #registro {
   margin-top: 100px;
+}
+
+#NombreApellido {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  padding-left: 5px;
+}
+
+h1 {
+  margin-bottom: 0%;
 }

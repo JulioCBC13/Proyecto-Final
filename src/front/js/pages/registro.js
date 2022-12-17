@@ -7,23 +7,33 @@ export const Registro = () => {
       <div class="form-signin w-100 m-auto">
         <div className="contenedor bg-dark">
           <div className="text-center ">
-            <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
+            <h1 class="h3 mb-3 fw-normal text-center">Registrate</h1>
+            <p>Es rapido y facil</p>
 
-            <div class="form-floating" id="email">
+            <div class="input-group mb-3" id="#NombreApellido ">
+              
               <input
-                type="email"
+                  type="text"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-default"
+                  placeholder="Nombre"
+                />
+              </div>
+              <input
+                type="text"
                 class="form-control"
-                id="floatingInput"
-                placeholder="name@example.com"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                placeholder="Nombre"
               />
-              <label for="floatingInput">Email address</label>
             </div>
             <div class="form-floating" id="password">
               <input
                 type="password"
                 class="form-control"
                 id="floatingPassword"
-                placeholder="Password"
+                placeholder="Apellido"
               />
               <label for="floatingPassword">Password</label>
             </div>
