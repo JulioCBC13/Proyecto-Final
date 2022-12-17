@@ -6,34 +6,55 @@ export const Registro = () => {
     <div className="text-center d-flex" id="registro">
       <div class="form-signin w-100 m-auto">
         <div className="contenedor bg-dark">
-          <div className="text-center ">
-            <h1 class="h3 mb-3 fw-normal text-center">Registrate</h1>
-            <p>Es rapido y facil</p>
+          {/* Texto de saludo */}
+          <div class=" p-1 border-bottom border-secondary" id="Registrate">
+            <h1 class="h3 mb-1 fw-normal text-center">Registrate</h1>
+            <p className="mb-1">Es rapido y facil</p>
+          </div>
 
+          <div className="text-center mt-2">
+            {/* Nombre y apellido */}
             <div class="input-group mb-3" id="#NombreApellido ">
               <input
                 type="text"
-                class="form-control"
+                class="form-control me-1 rounded"
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default"
-                placeholder="Nombre"
+                placeholder="Nombres"
               />
               <input
                 type="text"
-                class="form-control"
+                class="form-control rounded"
                 aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default"
-                placeholder="Nombre"
+                placeholder="Apellidos"
               />
             </div>
-            <div class="form-floating" id="password">
+
+            {/* Email y Contrasena */}
+
+            <div class="input mb-3" id="#EmailContraseña ">
               <input
-                type="password"
-                class="form-control"
-                id="floatingPassword"
-                placeholder="Apellido"
+                type="text"
+                class="form-control mb-1"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                placeholder="Email"
               />
-              <label for="floatingPassword">Password</label>
+              <input
+                type="text"
+                class="form-control mb-1"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                placeholder="Contraseña"
+              />
+              <input
+                type="text"
+                class="form-control mb-1"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                placeholder="C.I"
+              />
             </div>
 
             <div class="checkbox mb-3">
@@ -41,10 +62,10 @@ export const Registro = () => {
                 <input type="checkbox" value="remember-me" /> Remember me
               </label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">
-              Sign in
+            <button class="w-100 btn btn-lg btn active" type="submit" id="boton">
+              Crear Cuenta
             </button>
-            <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+            
           </div>
         </div>
       </div>
