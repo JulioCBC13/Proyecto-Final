@@ -11,15 +11,13 @@ export const Registro = () => {
             <p>Es rapido y facil</p>
 
             <div class="input-group mb-3" id="#NombreApellido ">
-              
               <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-default"
-                  placeholder="Nombre"
-                />
-              </div>
+                type="text"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                placeholder="Nombre"
+              />
               <input
                 type="text"
                 class="form-control"
