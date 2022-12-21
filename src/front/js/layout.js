@@ -11,13 +11,16 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { Registro } from "./pages/registro";
+import { AboutUs } from "./pages/about-us";
 
 //create your first component
 const Layout = () => {
-    //the basename is used when your project is published in a subdirectory and not in the root of the domain
-    // you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
-    const basename = process.env.BASENAME || "";
+  //the basename is used when your project is published in a subdirectory and not in the root of the domain
+  // you can set the basename on the .env file located at the root of this project, E.g: BASENAME=/react-hello-webapp/
+  const basename = process.env.BASENAME || "";
 
+<<<<<<< HEAD
     return (
         <div>
             <BrowserRouter basename={basename}>
@@ -36,6 +39,27 @@ const Layout = () => {
             </BrowserRouter>
         </div>
     );
+=======
+  return (
+    <div>
+      <BrowserRouter basename={basename}>
+        <ScrollToTop>
+          <Navbar />
+          <Routes>
+            <Route element={<Home />} path="/" />
+            <Route element={<Demo />} path="/demo" />
+            <Route element={<Login />} path="/login" />
+            <Route element={<Single />} path="/single/:theid" />
+            <Route element={<h1>Not found!</h1>} />
+            <Route element={<Registro />} path="/registro" />
+            <Route element={<AboutUs />} path="/about-us" />
+          </Routes>
+          <Footer />
+        </ScrollToTop>
+      </BrowserRouter>
+    </div>
+  );
+>>>>>>> 04561b97484037f61f37616b2e4bb1335b5e5357
 };
 
 export default injectContext(Layout);
