@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /*background-image: url(Image/istockphoto.jpg);*/
+  background-color: #a78689;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,4 +99,26 @@
 }
 .formulario input[type="button"] {
   width: 60%;
+  margin: auto;
+  border: solid thin white;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  background-color: white;
+  font-weight: 600;
+  margin-top: 3rem;
+  font-size: pointer;
+  color: black;
+}
+.sign-in {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.sign-in.active {
+  opacity: 1;
+  visibility: visible;
+}
+.sign-up.active {
+  opacity: 0;
+  visibility: hidden;
 }
