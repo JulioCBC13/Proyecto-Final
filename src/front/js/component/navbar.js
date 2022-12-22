@@ -4,8 +4,8 @@ import "/workspace/Proyecto-Final/src/front/js/component/navbar.css";
 
 export const Navbar = () => {
   return (
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-      <div class="container-fluid text-white">
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#">
           Navbar
         </a>
@@ -74,7 +74,7 @@ export const Navbar = () => {
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-light" type="submit">
               Search
             </button>
           </form>
