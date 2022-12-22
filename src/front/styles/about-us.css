@@ -4,26 +4,24 @@ body{
   margin: 0;
   padding: 0;
 }
+h1,h2,h4,p,input,button,label{
+  font-family: 'Josefin Sans', sans-serif;
+}
 .about-us{   
-    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
   }
 .descripcion{
-    font-family: 'Josefin Sans', sans-serif;
     width: 1000px;
     height: 100px;
     color: #10394D;
-    border: 3px;
   }
 .title-page{
-    font-family: 'Josefin Sans', sans-serif;
     width: 1000px;
     height: 100px;
     color: #10394D;
-    border: 3px;
   }
 .box{
     width: 1400px;
