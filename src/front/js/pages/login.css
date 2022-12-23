@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #a78689;
+  background-color: #75f4df;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,10 +48,10 @@
   background-color: #ea6c75;
 }
 .formulario {
-  width: 400px;
+  width: 300px;
   padding: 1rem;
   margin: 2rem;
-  background-color: rgba(51, 51, 51, 0.602);
+  background-color: rgba(117, 116, 116, 0.602);
   text-align: center;
 }
 .create-acount {
@@ -117,8 +117,4 @@
 .sign-in.active {
   opacity: 1;
   visibility: visible;
-}
-.sign-up.active {
-  opacity: 0;
-  visibility: hidden;
 }
