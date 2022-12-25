@@ -13,11 +13,30 @@ h1,h2,h4,p,input,span,label{
     justify-content:center;
     align-items: center;
   }
+  .texto1{
+    width: 900px;
+    text-align: justify;
+}
 .descripcion{
-    width: 1000px;
-    height: 100px;
+  background-color: #10597C;
+    width: 100%;
+    height: 300px;
+    color: #5BD5C9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+.descripcion2{
+  background-color: #5BD5C9;
+    width: 100%;
+    height: 300px;
     color: #10394D;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
 .title-page{
     width: 1000px;
     height: 100px;
