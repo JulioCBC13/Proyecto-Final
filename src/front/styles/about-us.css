@@ -39,8 +39,10 @@ h1,h2,h4,p,input,span,label{
 }
 .title-page{
     width: 1000px;
-    height: 100px;
+    height: 600px;
     color: #10394D;
+    display: flex;
+    flex-direction: column;
   }
 .box{
     width: 1400px;

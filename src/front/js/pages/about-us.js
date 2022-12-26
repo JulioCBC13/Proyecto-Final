@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/about-us.css";
+import "../../img/contaplus.png";
 import "../../img/reunion.jpg";
 import "../../img/contador 3.jpg";
 import "../../img/Juan.jpg";
@@ -11,22 +12,24 @@ export const AboutUs = () => {
     return (
         <div className="about-us">
         <div className="title-page d-flex justify-content-center align-items-center">
+        <img src="contaplus.png" width="450" height="450" alt="images"/>
+        <br/>
             <h1>¿Quiénes somos?</h1>
         </div>
         <div className="descripcion">
         <img src="contador 3.jpg" width="450" height="250" alt="images"/>
         <div className="texto1">
-            <h4>Somos un grupo de desarrolladores que se unió para dar respuesta a una necesidad que se detectó respecto a la gestión de documentos contables y que nos sentíamos capaces de resolver a través de una herramienta moderna, rápida y eficiente. Pasa el mouse sobre las fotos para saber más.</h4>
+            <h4>Somos una empresa que busca dar respuesta oportuna a las necesidades de nuestros clientes en el área contable, a través de la prestación de servicios que le ahorran tiempo y dinero que resultan ser elementos muy valiosos para ellos en su día a día.</h4>
             </div>
         </div>
         <div className="descripcion2">
         <div className="texto1">
-            <h4>Somos un grupo de desarrolladores que se unió para dar respuesta a una necesidad que se detectó respecto a la gestión de documentos contables y que nos sentíamos capaces de resolver a través de una herramienta moderna, rápida y eficiente. Pasa el mouse sobre las fotos para saber más.</h4>
+            <h4>Por ello nos enfocamos en el diseño de herramientas que les generen los documentos que necesitan con más frecuencia haciendo uso de las tecnologías web más potentes del momento, de manera que sus trámites puedan verse lo más agilizados posible. Pasa el mouse sobre ellos para conocerlos un poco más.</h4>
             </div>
             <img src="reunion.jpg" width="450" height="250" alt="images"/>
         </div>
         <br/>
-        <div className="title-page d-flex justify-content-center align-items-center">
+        <div>
             <h1>Nuestro equipo:</h1>
         </div>
         <br/><br/>
