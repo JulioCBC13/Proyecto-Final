@@ -32,17 +32,18 @@
   padding: 1rem 0;
 }
 .message button {
-  padding: 1rem;
+  padding: 0.6rem;
   font-weight: 400;
   background-color: rgb(92, 210, 92) !important;
   border-radius: 2rem;
   border: none;
   outline: none;
-  cursor: pointer;
-  font-size: pointer;
+  cursor: pointer;  
   margin-top: 2rem;
   transition: all 0.2s ease-in;
   color: black;
+  font-weight: 600;
+  border-bottom: white thin solid;
 }
 .message button:hover {
   background-color: #ea6c75;
@@ -79,7 +80,7 @@
   transition: all 0.2s ease-in;
 }
 .border-icon:hover {
-  background-color: #d0bcbd;
+  background-color: rgb(92, 210, 92) !important;
   cursor: pointer;
 }
 .Chapter {
@@ -102,7 +103,8 @@
 .formulario input[type="button"] {
   width: 60%;
   margin: auto;
-  border: solid thin white;
+ /* border: solid thin white;*/
+  border-bottom: white thin solid;
   padding: 0.5rem;
   border-radius: 1.7rem;
   background-color: rgb(92, 210, 92) !important;
