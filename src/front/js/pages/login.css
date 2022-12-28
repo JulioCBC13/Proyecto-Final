@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #75f4df;
+  background-color: #10597c;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,29 +34,31 @@
 .message button {
   padding: 1rem;
   font-weight: 400;
-  background-color: #9e3940;
+  background-color: rgb(92, 210, 92) !important;
   border-radius: 2rem;
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: pointer;
   margin-top: 2rem;
   transition: all 0.2s ease-in;
-  color: white;
+  color: black;
 }
 .message button:hover {
   background-color: #ea6c75;
 }
 .formulario {
   width: 300px;
+  height: 440px;
   padding: 1rem;
   margin: 2rem;
-  background-color: rgba(117, 116, 116, 0.602);
+  background-color: rgba(196, 192, 192, 0.602);
   text-align: center;
+  border-radius: 30px;
 }
-.create-acount {
-  padding: 2.7rem;
-  font-size: 1.7rem;
+.Log-in {
+  padding: 1rem;
+  font-size: 1rem;
 }
 .icons {
   width: 200px;
@@ -77,11 +79,11 @@
   transition: all 0.2s ease-in;
 }
 .border-icon:hover {
-  background-color: #9e3940;
+  background-color: #d0bcbd;
   cursor: pointer;
 }
-.cuenta-gratis {
-  padding: 2rem;
+.Chapter {
+  padding: 1.6rem;
 }
 .formulario input {
   width: 70%;
@@ -101,15 +103,15 @@
   width: 60%;
   margin: auto;
   border: solid thin white;
-  padding: 0.7rem;
-  border-radius: 2rem;
-  background-color: white;
+  padding: 0.5rem;
+  border-radius: 1.7rem;
+  background-color: rgb(92, 210, 92) !important;
   font-weight: 600;
   margin-top: 3rem;
   font-size: pointer;
   color: black;
 }
-.sign-in {
+/*.sign-in {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -117,4 +119,4 @@
 .sign-in.active {
   opacity: 1;
   visibility: visible;
-}
+}*/

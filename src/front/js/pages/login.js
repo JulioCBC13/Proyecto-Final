@@ -5,16 +5,16 @@ import "./signin.js";
 export const Login = () => {
   return (
     <div className="bodyL">
-      <div className="container-form sign-up">
+      <div className="container-form sign-in">
         <div className="welcome-back">
           <div className="message">
-            <h2>Bienvenido a mi</h2>
-            <p>Si ya tienes cuenta por favor inicia sesion aqui</p>
-            <button className="sign-up-btn">Iniciar Sesion</button>
+            <h2>¡Bienvenido al exito!</h2>
+            <p>Si ya tienes cuenta por favor inicia sesion aqui, si no registrate ya haciendo click</p>
+            <button className="sign-up-btn">Registrate</button>
           </div>
         </div>
         <form className="formulario">
-          <h2 className="create-account">Iniciar sesión</h2>
+          <h2 className="Log-in">Iniciar sesión</h2>
           <div className="icons">
             <div className="border-icon">
               <i className="bx bxl-google"></i>
@@ -26,10 +26,10 @@ export const Login = () => {
               <i className="bx bxl-facebook-circle"></i>
             </div>
           </div>
-          <p className="cuenta-gratis"> Crear una cuenta cuenta gratis</p>
+          <p className="Chapter">¡Adelante!</p>
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Contraseña" />
-          <input type="button" value="Iniciar sesion" />
+          <input type="button" value="Iniciar sesión" />
         </form>
       </div>      
     </div>
