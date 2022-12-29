@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/about-us.css";
+import "../../img/About Us.png";
 import "../../img/contaplus.png";
 import "../../img/reunion.jpg";
 import "../../img/contador 3.jpg";
@@ -12,9 +13,10 @@ export const AboutUs = () => {
     return (
         <div className="about-us">
         <div className="title-page d-flex justify-content-center align-items-center">
-        <img src="contaplus.png" width="450" height="450" alt="images"/>
+        <img src="contaplus.png" width="350" height="350" alt="images"/>
         <br/>
-            <h1>¿Quiénes somos?</h1>
+        <img src="About Us.png" alt="images"/>
+            {/* <h1>¿Quiénes somos?</h1> */}
         </div>
         <div className="descripcion">
         <img src="contador 3.jpg" width="450" height="250" alt="images"/>

@@ -39,10 +39,10 @@ h1,h2,h4,p,input,span,label{
 }
 .title-page{
     width: 1000px;
-    height: 600px;
+    height: 400px;
     color: #10394D;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 .box{
     width: 1400px;
