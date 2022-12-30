@@ -1,9 +1,5 @@
 nav {
-  background-color: #10394D;
-}
-.container-fluid{
-  color: #5BD5C9;  
-}
-footer {
-  background-color: #989AAC;
+  background-color: #262b2f;
+  position: sticky !important;
+  top: 0;
 }

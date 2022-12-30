@@ -4,7 +4,7 @@ import "/workspace/Proyecto-Final/src/front/js/component/navbar.css";
 
 export const Navbar = () => {
   return (
-    <nav class="navbar navbar-dark navbar-expand-lg">
+    <nav class="navbar navbar-dark navbar-expand-lg ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           Navbar
