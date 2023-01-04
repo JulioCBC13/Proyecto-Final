@@ -14,6 +14,7 @@ import { Footer } from "./component/footer";
 import { Registro } from "./pages/registro";
 import { AboutUs } from "./pages/about-us";
 import { Services } from "./pages/services";
+import { Agendar } from "./pages/agendar";
 
 //create your first component
 const Layout = () => {
@@ -36,6 +37,7 @@ const Layout = () => {
             <Route element={<Registro />} path="/registro" />
             <Route element={<AboutUs />} path="/about-us" />
             <Route element={<Services />} path="/services" />
+            <Route element={<Agendar />} path="/agendar" />
           </Routes>
           <Footer />
         </ScrollToTop>
