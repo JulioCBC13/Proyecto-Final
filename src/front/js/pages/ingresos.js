@@ -1,18 +1,18 @@
 import React from "react";
 
-import "../../img/Agendar title.png";
-import "../../img/agendar.png";
+import "../../img/Ingresos title.png";
+import "../../img/ingresos.jpg";
 
-export const Agendar = () => {
+export const Ingresos = () => {
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
         <img src="contaplus.png" width="350" height="350" alt="Contaplus" />
         <br />
-        <img src="Agendar title.png" alt="Servicios" />
+        <img src="Ingresos title.png" alt="Servicios" />
       </div>      
       <div className="descripcion">
-        <img src="agendar.png" width="450" height="250" alt="images" />
+        <img src="ingresos.jpg" width="450" height="250" alt="images" />
         <div className="texto1">
           <h4>
             Somos una empresa que busca dar respuesta oportuna a las necesidades
@@ -25,19 +25,19 @@ export const Agendar = () => {
       <br/><br/>
       <div className="valores">
       <div>
-            <h1>Agende una cita a continuación:</h1>
+            <h1>Solicite una Certificación de Ingresos a continuación:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Seleccione la fecha de la cita:</h5></label>
+        <label for="formFile" className="form-label"><h5>Ingrese requisito 1:</h5></label>
         <br/>
-        <input type="date"/>
+        <input type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Seleccione la hora de la cita:</h5></label>
+        <label for="formFile" className="form-label"><h5>Ingrese requisito 2:</h5></label>
         <br/>
-        <input type="time"/>
+        <input type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Explique el motivo de la cita:</h5></label>
+        <label for="formFile" className="form-label"><h5>Ingrese requisito 3:</h5></label>
         <br/>
-        <textarea name="textarea" rows="10" cols="50"/>
+        <input type="text"/>
         <br/><br/>
         <button type="submit" className="btn btn-success">
               Enviar solicitud

@@ -15,6 +15,10 @@ import { Registro } from "./pages/registro";
 import { AboutUs } from "./pages/about-us";
 import { Services } from "./pages/services";
 import { Agendar } from "./pages/agendar";
+import { Balance } from "./pages/balance";
+import { Asesoria } from "./pages/asesoria";
+import { Ingresos } from "./pages/ingresos";
+import { Impuestos } from "./pages/impuestos";
 
 //create your first component
 const Layout = () => {
@@ -38,6 +42,10 @@ const Layout = () => {
             <Route element={<AboutUs />} path="/about-us" />
             <Route element={<Services />} path="/services" />
             <Route element={<Agendar />} path="/agendar" />
+            <Route element={<Balance />} path="/balance" />
+            <Route element={<Ingresos />} path="/ingresos" />
+            <Route element={<Impuestos />} path="/impuestos" />
+            <Route element={<Asesoria />} path="/asesoria" />
           </Routes>
           <Footer />
         </ScrollToTop>
