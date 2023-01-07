@@ -23,27 +23,26 @@ export const Agendar = () => {
           </h4>
         </div>
       </div>
+      <br/><br/>
       <div className="valores">
-      <div className="mb-3">
-  <label for="formFile" className="form-label">Default file input example</label>
-  <input className="form-control" type="file" id="formFile"/>
-</div>
-<div className="mb-3">
-  <label for="formFileMultiple" className="form-label">Multiple files input example</label>
-  <input className="form-control" type="file" id="formFileMultiple" multiple/>
-</div>
-<div className="mb-3">
-  <label for="formFileDisabled" className="form-label">Disabled file input example</label>
-  <input className="form-control" type="file" id="formFileDisabled" disabled/>
-</div>
-<div className="mb-3">
-  <label for="formFileSm" className="form-label">Small file input example</label>
-  <input className="form-control form-control-sm" id="formFileSm" type="file"/>
-</div>
-<div>
-  <label for="formFileLg" className="form-label">Large file input example</label>
-  <input className="form-control form-control-lg" id="formFileLg" type="file"/>
-</div>
+      <div>
+            <h1>Agende una cita a continuación:</h1>
+        </div>
+        <label for="formFile" className="form-label"><h5>Seleccione la fecha de la cita:</h5></label>
+        <br/>
+        <input type="date"/>
+        <br/><br/>
+        <label for="formFile" className="form-label"><h5>Seleccione la hora de la cita:</h5></label>
+        <br/>
+        <input type="time"/>
+        <br/><br/>
+        <label for="formFile" className="form-label"><h5>Explique el motivo de la cita:</h5></label>
+        <br/>
+        <textarea name="textarea" rows="10" cols="50"/>
+        <br/><br/>
+        <button type="submit" className="btn btn-success">
+              Enviar solicitud
+            </button>
       </div>
     </div>
   );

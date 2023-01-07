@@ -4,7 +4,7 @@ body{
   margin: 0;
   padding: 0;
 }
-h1,h2,h4,p,input,span,label{
+h1,h2,h4,h5,p,input,span,label{
   font-family: 'Josefin Sans', sans-serif;
 }
 .about-us,.services,.agendar{   
