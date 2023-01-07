@@ -2,6 +2,17 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/home.css";
 import "../../img/contaplus.png";
+import "../../img/html.png";
+import "../../img/css.png";
+import "../../img/js.png";
+import "../../img/react.png";
+import "../../img/python.png";
+import "../../img/flask.png";
+import "../../img/boostrap.png";
+import "../../img/github.png";
+import "../../img/gitpod.png";
+import "../../img/postgre.png";
+import "../../img/sql.png";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -100,34 +111,7 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        {/*<!-- Testimonial section-->*/}
-        <div class="py-5 bg-light">
-          <div class="container px-5 my-5">
-            <div class="row gx-5 justify-content-center">
-              <div class="col-lg-10 col-xl-7">
-                <div class="text-center">
-                  <div class="fs-4 mb-4 fst-italic">
-                    "Working with Start Bootstrap templates has saved me tons of
-                    development time when building new projects! Starting with a
-                    Bootstrap template just makes things easier!"
-                  </div>
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img
-                      class="rounded-circle me-3"
-                      src="https://dummyimage.com/40x40/ced4da/6c757d"
-                      alt="..."
-                    />
-                    <div class="fw-bold">
-                      Tom Ato
-                      <span class="fw-bold text-primary mx-1">/</span>
-                      CEO, Pomodoro
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         {/*<!-- Blog preview section-->*/}
         <section class="py-5">
           <div class="container px-5 my-5">
@@ -271,12 +255,184 @@ export const Home = () => {
                 </div>
               </div>
             </div>
+            {/*<!-- HERRAMIENTAS/ TECNOLOGIAS/ LENGUAJES USADOS ICONOS-->*/}
+            <div class="container px-5 my-5">
+              <div class="text-center">
+                <h1 class="fw-bold ">HERRAMIENTAS</h1>
+                <p class="lead fw-normal text-muted mb-3">
+                  {/*<!-- TEXTO AQUI!! -->*/}
+                </p>
+              </div>
+              {/*<!-- SECCION 1 - 3 iconos -->*/}
+              <div class="row gx-5 row-cols-1 row-cols-sm-4 justify-content-center">
+                <div class="col">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid mb-1 px-2"
+                      src="github.png"
+                      alt="..."
+                    />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid mb-1 px-2"
+                      src="gitpod.png"
+                      alt="..."
+                    />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid mb-1 px-2"
+                      src="boostrap.png"
+                      alt="..."
+                    />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*<!-- SECCION 2 - 4 iconos -->*/}
+              <div class="row gx-5 row-cols-1 row-cols-sm-4 justify-content-center">
+                <div class="col">
+                  <div class="text-center">
+                    <img class="img-fluid mb-1 px-2" src="html.png" alt="..." />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <img class="img-fluid mb-1 px-2" src="css.png" alt="..." />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <img class="img-fluid mb-1 px-2" src="js.png" alt="..." />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid mb-1 px-2"
+                      src="react.png"
+                      alt="..."
+                    />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid mb-1 px-2"
+                      src="flask.png"
+                      alt="..."
+                    />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid mb-1 px-2"
+                      src="python.png"
+                      alt="..."
+                    />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <img
+                      class="img-fluid mb-1 px-2"
+                      src="postgre.png"
+                      alt="..."
+                    />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="text-center">
+                    <img class="img-fluid mb-1 px-2" src="sql.png" alt="..." />
+                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
+                    <div class="fst-italic text-muted">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/*<!-- Testimonial section
+            <div class="py-5 bg-light">
+              <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                  <div class="col-lg-10 col-xl-7">
+                    <div class="text-center">
+                      <div class="fs-4 mb-4 fst-italic">
+                        "Working with Start Bootstrap templates has saved me
+                        tons of development time when building new projects!
+                        Starting with a Bootstrap template just makes things
+                        easier!"
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img
+                          class="rounded-circle me-3"
+                          src="https://dummyimage.com/40x40/ced4da/6c757d"
+                          alt="..."
+                        />
+                        <div class="fw-bold">
+                          Tom Ato
+                          <span class="fw-bold text-primary mx-1">/</span>
+                          CEO, Pomodoro
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->*/}
             {/*<!-- Call to action-->*/}
             <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
               <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
                 <div class="mb-4 mb-xl-0">
                   <div class="fs-3 fw-bold text-white">
-                    New products, delivered to you.
+                    {/*<!-- TITULO AQUI -->*/}
                   </div>
                   <div class="text-white-50">
                     Sign up for our newsletter for the latest updates.
@@ -338,9 +494,5 @@ export const Home = () => {
       {/*<!-- Core theme JS-->*/}
       <script src="js/scripts.js"></script>
     </body>
-
-    /*<div className="text-center mt-5">
-   <p>Miguel</p>
-</div>*/
   );
 };
