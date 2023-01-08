@@ -7,7 +7,7 @@ export const Asesoria = () => {
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
-        <img src="contaplus.png" width="350" height="350" alt="Contaplus" />
+        <img src="contaplus.png" width="390" height="350" alt="Contaplus" />
         <br />
         <img src="Asesoria title.png" alt="Servicios" />
       </div>      
