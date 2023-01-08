@@ -9,11 +9,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #10597c;
+  background-color: #DFE3E7;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: black;
 }
 .container-form {
   width: 90%;
@@ -32,28 +32,32 @@
   padding: 1rem 0;
 }
 .message button {
-  padding: 0.6rem;
-  font-weight: 400;
-  background-color: rgb(92, 210, 92) !important;
-  border-radius: 2rem;
-  border: none;
-  outline: none;
-  cursor: pointer;  
-  margin-top: 2rem;
-  transition: all 0.2s ease-in;
-  color: black;
-  font-weight: 600;
-  border-bottom: white thin solid;
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  padding: 8px 20px;
+  background-color: rgb(92, 210, 92);
+  border-radius: 35px;
+  border: 2px solid rgb(92, 210, 92);
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
 }
 .message button:hover {
-  background-color: #ea6c75;
+  color:black !important;
+  background-color: transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 15px 18px rgba(32, 191, 107, 0.4);
+  transform: translateY(-6px);
 }
 .formulario {
   width: 300px;
   height: 440px;
   padding: 1rem;
   margin: 2rem;
-  background-color: rgba(196, 192, 192, 0.602);
+  background-color: rgba(118, 115, 115, 0.602);
   text-align: center;
   border-radius: 30px;
 }
@@ -101,17 +105,26 @@
   color: white;
 }
 .formulario input[type="button"] {
-  width: 60%;
-  margin: auto;
- /* border: solid thin white;*/
-  border-bottom: white thin solid;
-  padding: 0.5rem;
-  border-radius: 1.7rem;
-  background-color: rgb(92, 210, 92) !important;
-  font-weight: 600;
-  margin-top: 3rem;
-  font-size: pointer;
-  color: black;
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  padding: 8px 20px;
+  background-color: rgb(92, 210, 92);
+  border-radius: 35px;
+  border: 2px solid rgb(92, 210, 92);
+  box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease 0s;
+}
+
+.formulario input[type="button"]:hover {
+  color:black !important;
+  background-color: #DFE3E7;
+  border-radius: 6px;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 15px 18px rgba(32, 191, 107, 0.4);
+  transform: translateY(-6px);
 }
 /*.sign-in {
   position: absolute;
