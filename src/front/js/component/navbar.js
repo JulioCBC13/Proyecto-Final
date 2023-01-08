@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "/workspace/Proyecto-Final/src/front/js/component/navbar.css";
+import "../../img/logo navbar.png";
 
 export const Navbar = () => {
   return (
     <nav class="navbar navbar-dark navbar-expand-lg ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          Navbar
+          <img src="logo navbar.png" width="50" height="40"/>
         </a>
         <button
           class="navbar-toggler"
@@ -29,7 +30,12 @@ export const Navbar = () => {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Link
+                Registro
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Login
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -40,17 +46,27 @@ export const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
+                Servicios
               </a>
               <ul class="dropdown-menu  bg-dark">
                 <li>
                   <a class="dropdown-item text-white" href="#">
-                    Action
+                    Balances Personales
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item text-white" href="#">
-                    Another action
+                    Certificaciones de Ingreso
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    Declaraciones de Impuestos
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    Asesoría Financiera
                   </a>
                 </li>
                 <li>
@@ -58,24 +74,21 @@ export const Navbar = () => {
                 </li>
                 <li>
                   <a class="dropdown-item text-white" href="#">
-                    Something else here
+                    Agendar una cita
                   </a>
                 </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="Ingrese su texto aquí"
               aria-label="Search"
             />
             <button class="btn btn-outline-light" type="submit">
-              Search
+              Buscar
             </button>
           </form>
         </div>
