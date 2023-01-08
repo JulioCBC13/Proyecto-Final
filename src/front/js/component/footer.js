@@ -12,7 +12,7 @@ export const Footer = () => (
       <div class="row align-items-center justify-content-between flex-column flex-sm-row">
         <div class="col-auto">
           <div class="small m-0 text-white">
-            Copyright &copy; Your Website 2022
+            Copyright &copy; Your Website 2023
           </div>
         </div>
         <div class="col-auto">

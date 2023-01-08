@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./login.css";
-import "./signin.js";
 
 export const Login = () => {
   return (
@@ -9,7 +8,10 @@ export const Login = () => {
         <div className="welcome-back">
           <div className="message">
             <h2>¡Bienvenido al exito!</h2>
-            <p>Si ya tienes cuenta por favor inicia sesion aqui, si no registrate ya haciendo click</p>
+            <p>
+              Si ya tienes cuenta por favor inicia sesion aqui, si no registrate
+              ya haciendo click
+            </p>
             <button className="sign-up-btn">Registrate</button>
           </div>
         </div>
@@ -31,7 +33,7 @@ export const Login = () => {
           <input type="password" placeholder="Contraseña" />
           <input type="button" value="Iniciar sesión" />
         </form>
-      </div>      
+      </div>
     </div>
   );
 };
