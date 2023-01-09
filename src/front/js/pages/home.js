@@ -254,7 +254,7 @@ export const Home = () => {
                   <div class="text-center">
                     <img
                       class="img-fluid mb-1 px-2"
-                      src="github.png"
+                      src="github.png" width="50" height="50"
                       alt="..."
                     />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
@@ -267,7 +267,7 @@ export const Home = () => {
                   <div class="text-center">
                     <img
                       class="img-fluid mb-1 px-2"
-                      src="gitpod.png"
+                      src="gitpod.png" width="50" height="50"
                       alt="..."
                     />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
@@ -280,7 +280,7 @@ export const Home = () => {
                   <div class="text-center">
                     <img
                       class="img-fluid mb-1 px-2"
-                      src="boostrap.png"
+                      src="boostrap.png" width="50" height="50"
                       alt="..."
                     />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
@@ -294,7 +294,7 @@ export const Home = () => {
               <div class="row gx-5 row-cols-1 row-cols-sm-4 justify-content-center">
                 <div class="col">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="html.png" alt="..." />
+                    <img class="img-fluid mb-1 px-2" src="html.png" width="50" height="50" alt="..." />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -303,7 +303,7 @@ export const Home = () => {
                 </div>
                 <div class="col">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="css.png" alt="..." />
+                    <img class="img-fluid mb-1 px-2" src="css.png" width="50" height="50" alt="..." />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -312,7 +312,7 @@ export const Home = () => {
                 </div>
                 <div class="col">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="js.png" alt="..." />
+                    <img class="img-fluid mb-1 px-2" src="js.png" width="50" height="50" alt="..." />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -323,7 +323,7 @@ export const Home = () => {
                   <div class="text-center">
                     <img
                       class="img-fluid mb-1 px-2"
-                      src="react.png"
+                      src="react.png" width="50" height="50"
                       alt="..."
                     />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
@@ -336,7 +336,7 @@ export const Home = () => {
                   <div class="text-center">
                     <img
                       class="img-fluid mb-1 px-2"
-                      src="flask.png"
+                      src="flask.png" width="50" height="50"
                       alt="..."
                     />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
@@ -349,7 +349,7 @@ export const Home = () => {
                   <div class="text-center">
                     <img
                       class="img-fluid mb-1 px-2"
-                      src="python.png"
+                      src="python.png" width="50" height="50"
                       alt="..."
                     />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
@@ -362,7 +362,7 @@ export const Home = () => {
                   <div class="text-center">
                     <img
                       class="img-fluid mb-1 px-2"
-                      src="postgre.png"
+                      src="postgre.png" width="50" height="50"
                       alt="..."
                     />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
@@ -373,7 +373,7 @@ export const Home = () => {
                 </div>
                 <div class="col">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="sql.png" alt="..." />
+                    <img class="img-fluid mb-1 px-2" src="sql.png" width="50" height="50" alt="..." />
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}

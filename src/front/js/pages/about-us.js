@@ -65,7 +65,7 @@ export const AboutUs = () => {
                <img src="Oscar.jpg" alt="images"/>
             </div>
             <div className="details">
-               <h2>Óscar Álvarez<br/><span>Log In Dev</span></h2>
+               <h2>Oscar Alvarez<br/><span>Log In Dev</span></h2>
              </div>
           </div>
     </div>
