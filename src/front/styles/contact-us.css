@@ -54,19 +54,21 @@ p {
 
 .contacto {
   background: white;
-  padding: 50px 40px;
-  width: 42%;
+  padding: 20px 30px;
+  width: 32%;
   margin-top: 30px;
   margin-bottom: 30px;
+  border-radius: 30px;
+  background-color: rgba(118, 115, 115, 0.602);
 }
 
 .botonEnviarMensaje {
   display: inline-block;
-  width: 152px;
+  width: 142px;
   text-align: center;
   margin-top: 20px;
   color: #fff;
-  padding: 8px 20px;
+  padding: 8px 15px;
   background-color: #20bf6b;
   border-radius: 35px;
   border: 2px solid #20bf6b;
@@ -75,12 +77,13 @@ p {
 }
 
 .botonEnviarMensaje:hover {
-  color: #20bf6b !important;
+  color: black !important;
   background-color: transparent;
   border-radius: 6px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
   box-shadow: 0px 15px 18px rgba(32, 191, 107, 0.4);
-  transform: translateY(-6px);
+  transform: translateY(-5px);
+  background-color: white;
 }
 
 .form-control {
