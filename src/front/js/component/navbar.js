@@ -8,7 +8,7 @@ export const Navbar = () => {
     <nav class="navbar navbar-dark navbar-expand-lg ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="logo navbar.png" width="50" height="40"/>
+          <img src="logo navbar.png" width="50" height="40" />
         </a>
         <button
           class="navbar-toggler"
@@ -91,6 +91,16 @@ export const Navbar = () => {
               Buscar
             </button>
           </form>
+          <div class="d-flex">         
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">            
+              <li class="nav-item">
+                <a class="nav-link" href="#">                
+                  Contacto                 
+                  <i class="fa-regular fa-envelope"></i>                        
+                </a>                
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

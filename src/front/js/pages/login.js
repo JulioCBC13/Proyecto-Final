@@ -19,13 +19,13 @@ export const Login = () => {
           <h2 className="Log-in">Iniciar sesión</h2>
           <div className="icons">
             <div className="border-icon">
-              <i className="bx bxl-google"></i>
+            <i className="fa-brands fa-google"></i>
             </div>
             <div className="border-icon">
-              <i className="bx bxl-instagram"></i>
+            <i className="fa-brands fa-square-instagram"></i>
             </div>
             <div className="border-icon">
-              <i className="bx bxl-facebook-circle"></i>
+            <i className="fa-brands fa-facebook"></i>
             </div>
           </div>
           <p className="Chapter">¡Adelante!</p>
