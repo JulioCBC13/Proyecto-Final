@@ -42,6 +42,7 @@ export const Ingresos = () => {
         <button type="submit" className="btn btn-success">
               Enviar solicitud
             </button>
+            <br/><br/>
       </div>
     </div>
   );

@@ -98,7 +98,7 @@ export const Services = () => {
           </h4>
           <form>
             <button type="submit" className="btn btn-success">
-              Otros Servicios
+              Agendar una cita
             </button>
           </form>
         </div>
