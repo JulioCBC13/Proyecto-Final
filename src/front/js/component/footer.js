@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "/workspace/Proyecto-Final/src/front/js/component/navbar.css";
+import { Link } from "react-router-dom";
 
 export const Footer = () => (
   /*<footer className="footer mt-auto py-3 text-center">
@@ -12,21 +13,22 @@ export const Footer = () => (
       <div class="row align-items-center justify-content-between flex-column flex-sm-row">
         <div class="col-auto">
           <div class="small m-0 text-white">
-            Copyright &copy; Your Website 2023
+            ContaPlus &copy; 2023
           </div>
         </div>
         <div class="col-auto">
-          <a class="link-light small" href="#!">
+          {/* <a class="link-light small" href="#!">
             Privacy
           </a>
           <span class="text-white mx-1">&middot;</span>
           <a class="link-light small" href="#!">
             Terms
           </a>
-          <span class="text-white mx-1">&middot;</span>
-          <a class="link-light small" href="#!">
-            Contact
-          </a>
+          <span class="text-white mx-1">&middot;</span> */}
+          <Link class="link-light small" to="contact-us">
+            Contáctanos
+            <i class="ms-2 fa-regular fa-envelope"></i>
+          </Link>
         </div>
       </div>
     </div>

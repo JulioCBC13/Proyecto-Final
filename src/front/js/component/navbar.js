@@ -47,7 +47,7 @@ export const Navbar = () => {
               >
                 Servicios
               </Link>
-              <ul class="dropdown-menu  bg-dark">
+              <ul class="dropdown-menu dropdown-menu-dark">
                 <li>
                   <Link class="dropdown-item text-white" to="balance">
                     Balances Personales
@@ -82,17 +82,7 @@ export const Navbar = () => {
               Buscar
             </button>
           </form>
-          <div class="d-flex">         
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">            
-              <li class="nav-item">
-                <Link class="nav-link" to="contact-us">                
-                  Contacto                 
-                  <i class="ms-2 fa-regular fa-envelope"></i>                        
-                </Link>                
-              </li>
-            </ul>
           </div>
-        </div>
       </div>
     </nav>
   );

@@ -15,10 +15,11 @@ export const Ingresos = () => {
         <img src="ingresos.jpg" width="450" height="250" alt="images" />
         <div className="texto1">
           <h4>
-            Somos una empresa que busca dar respuesta oportuna a las necesidades
-            de nuestros clientes en el área contable, a través de la prestación
-            de servicios que le ahorran tiempo y dinero que resultan ser
-            elementos muy valiosos para ellos en su día a día.
+          Una certificación de ingresos es un documento que se emite para avalar y
+            dar legitimidad a los ingresos del solicitante en un tiempo determinado.
+            Para emitirlo se debe realizar una verificación de estados de cuenta bancarios, 
+            recibos de nómina o facturas de ventas que permitan corroborar que dichos
+            ingresos son exactos y provienen de actividades lícitas.
           </h4>
         </div>
       </div>

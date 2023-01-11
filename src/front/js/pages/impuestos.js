@@ -15,10 +15,10 @@ export const Impuestos = () => {
         <img src="impuestos.png" width="450" height="250" alt="images" />
         <div className="texto1">
           <h4>
-            Somos una empresa que busca dar respuesta oportuna a las necesidades
-            de nuestros clientes en el área contable, a través de la prestación
-            de servicios que le ahorran tiempo y dinero que resultan ser
-            elementos muy valiosos para ellos en su día a día.
+          Las declaraciones de impuestos son documentos que se presentan ante los
+            organimos de recaudación gubernamentales. Éstos deben reflejar la cantidad de
+            ingresos obtenidos durante el último año, de modo que en base a ellos se 
+            calcule la cantidad de tributos a cancelar por el contribuyente.
           </h4>
         </div>
       </div>
