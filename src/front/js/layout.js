@@ -14,7 +14,6 @@ import { Footer } from "./component/footer";
 import { Registro } from "./pages/registro";
 import { AboutUs } from "./pages/about-us";
 import { Services } from "./pages/services";
-import { Agendar } from "./pages/agendar";
 import { Balance } from "./pages/balance";
 import { Asesoria } from "./pages/asesoria";
 import { Ingresos } from "./pages/ingresos";
@@ -41,7 +40,6 @@ const Layout = () => {
             <Route element={<Registro />} path="/registro" />
             <Route element={<AboutUs />} path="/about-us" />
             <Route element={<Services />} path="/services" />
-            <Route element={<Agendar />} path="/agendar" />
             <Route element={<Balance />} path="/balance" />
             <Route element={<Ingresos />} path="/ingresos" />
             <Route element={<Impuestos />} path="/impuestos" />

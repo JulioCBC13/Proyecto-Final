@@ -65,15 +65,7 @@ export const Navbar = () => {
                 </li>
                 <li>
                   <Link class="dropdown-item text-white" to="asesoria">
-                    Asesoría Financiera
-                  </Link>
-                </li>
-                <li>
-                  <hr class="dropdown-divider "></hr>
-                </li>
-                <li>
-                  <Link class="dropdown-item text-white" to="agendar">
-                    Agendar una cita
+                    Asesoría Personalizada
                   </Link>
                 </li>
               </ul>
