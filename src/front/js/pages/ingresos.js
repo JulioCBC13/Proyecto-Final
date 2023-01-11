@@ -27,21 +27,26 @@ export const Ingresos = () => {
       <div>
             <h1>Solicite una Certificación de Ingresos a continuación:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Ingrese requisito 1:</h5></label>
+        <label for="formFile" className="form-label"><h5>Ingrese su nombre completo:</h5></label>
         <br/>
         <input type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese requisito 2:</h5></label>
+        <label for="formFile" className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
         <br/>
         <input type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese requisito 3:</h5></label>
+        <label for="formFile" className="form-label"><h5>Ingrese su ingreso promedio mensual:</h5></label>
+        <br/>
+        <input type="text"/>
+        <br/><br/>
+        <label for="formFile" className="form-label"><h5>Ingrese su profesión u ocupación:</h5></label>
         <br/>
         <input type="text"/>
         <br/><br/>
         <button type="submit" className="btn btn-success">
               Enviar solicitud
             </button>
+            <br/><br/>
       </div>
     </div>
   );

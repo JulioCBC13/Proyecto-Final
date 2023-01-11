@@ -24,58 +24,57 @@ export const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <Link class="nav-link active" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="registro">
                 Registro
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="login">
                 Login
-              </a>
+              </Link>
             </li>
             <li class="nav-item dropdown">
-              <a
+              <Link
                 class="nav-link dropdown-toggle"
-                href="#"
+                to="services"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 Servicios
-              </a>
+              </Link>
               <ul class="dropdown-menu  bg-dark">
                 <li>
-                  <a class="dropdown-item text-white" href="#">
+                  <Link class="dropdown-item text-white" to="balance">
                     Balances Personales
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item text-white" href="#">
+                  <Link class="dropdown-item text-white" to="ingresos">
                     Certificaciones de Ingreso
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item text-white" href="#">
+                  <Link class="dropdown-item text-white" to="impuestos">
                     Declaraciones de Impuestos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="dropdown-item text-white" href="#">
+                  <Link class="dropdown-item text-white" to="asesoria">
                     Asesoría Financiera
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <hr class="dropdown-divider "></hr>
                 </li>
                 <li>
-                  <a class="dropdown-item text-white" href="#">
+                  <Link class="dropdown-item text-white" to="agendar">
                     Agendar una cita
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -94,10 +93,10 @@ export const Navbar = () => {
           <div class="d-flex">         
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">            
               <li class="nav-item">
-                <a class="nav-link" href="#">                
+                <Link class="nav-link" to="contact-us">                
                   Contacto                 
-                  <i class="fa-regular fa-envelope"></i>                        
-                </a>                
+                  <i class="ms-2 fa-regular fa-envelope"></i>                        
+                </Link>                
               </li>
             </ul>
           </div>

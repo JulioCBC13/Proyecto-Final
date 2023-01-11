@@ -27,21 +27,22 @@ export const Agendar = () => {
       <div>
             <h1>Agende una cita a continuación:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Seleccione la fecha de la cita:</h5></label>
+        <label for="formFile" className="form-label"><h5>Haga click en el calendario y seleccione la fecha de la cita:</h5></label>
         <br/>
         <input type="date"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Seleccione la hora de la cita:</h5></label>
+        <label for="formFile" className="form-label"><h5>Haga click en el reloj y seleccione la hora de la cita:</h5></label>
         <br/>
         <input type="time"/>
         <br/><br/>
         <label for="formFile" className="form-label"><h5>Explique el motivo de la cita:</h5></label>
         <br/>
-        <textarea name="textarea" rows="10" cols="50"/>
+        <textarea name="textarea" rows="5" cols="50"/>
         <br/><br/>
         <button type="submit" className="btn btn-success">
               Enviar solicitud
             </button>
+            <br/><br/>
       </div>
     </div>
   );

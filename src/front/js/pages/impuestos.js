@@ -27,21 +27,30 @@ export const Impuestos = () => {
       <div>
             <h1>Solicite una Declaración de Impuestos a continuación:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Ingrese requisito 1:</h5></label>
+        <label for="formFile" className="form-label"><h5>Ingrese su nombre completo:</h5></label>
         <br/>
         <input type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese requisito 2:</h5></label>
+        <label for="formFile" className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
         <br/>
         <input type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese requisito 3:</h5></label>
+        <label for="formFile" className="form-label"><h5>Indique sus ingresos:</h5></label>
+        <br/>
+        <input type="text"/>
+        <br/><br/>
+        <label for="formFile" className="form-label"><h5>Indique sus costos:</h5></label>
+        <br/>
+        <input type="text"/>
+        <br/><br/>
+        <label for="formFile" className="form-label"><h5>Indique sus gastos:</h5></label>
         <br/>
         <input type="text"/>
         <br/><br/>
         <button type="submit" className="btn btn-success">
               Enviar solicitud
             </button>
+            <br/><br/>
       </div>
     </div>
   );
