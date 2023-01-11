@@ -5,7 +5,6 @@ import "../../img/balance.jpg";
 import "../../img/ingresos.jpg";
 import "../../img/impuestos.png";
 import "../../img/asesoria.jpg";
-import "../../img/agendar.png";
 
 export const Services = () => {
   return (
@@ -19,10 +18,10 @@ export const Services = () => {
         <img src="balance.jpg" width="450" height="250" alt="images" />
         <div className="texto1">
           <h4>
-            Somos una empresa que busca dar respuesta oportuna a las necesidades
-            de nuestros clientes en el área contable, a través de la prestación
-            de servicios que le ahorran tiempo y dinero que resultan ser
-            elementos muy valiosos para ellos en su día a día.
+            Los balances personales son documentos contables que muestran información
+            acerca de la situación financiera particular del solicitante, que incluye
+            detalles debidamente ordenados acerca de los activos, pasivos y patrimonios
+            que se poseen en un momento determinado.
           </h4>
           <form>
             <button type="submit" className="btn btn-success">
@@ -34,11 +33,11 @@ export const Services = () => {
       <div className="descripcion2">
         <div className="texto1">
           <h4>
-            Por ello nos enfocamos en el diseño de herramientas que les generen
-            los documentos que necesitan con más frecuencia haciendo uso de las
-            tecnologías web más potentes del momento, de manera que sus trámites
-            puedan verse lo más agilizados posible. Pasa el mouse sobre ellos
-            para conocerlos un poco más.
+            Una certificación de ingresos es un documento que se emite para avalar y
+            dar legitimidad a los ingresos del solicitante en un tiempo determinado.
+            Para emitirlo se debe realizar una verificación de estados de cuenta bancarios, 
+            recibos de nómina o facturas de ventas que permitan corroborar que dichos
+            ingresos son exactos y provienen de actividades lícitas.
           </h4>
           <form>
             <button type="submit" className="btn btn-success">
@@ -54,10 +53,10 @@ export const Services = () => {
         <img src="impuestos.png" width="450" height="250" alt="images" />
         <div className="texto1">
           <h4>
-            Somos una empresa que busca dar respuesta oportuna a las necesidades
-            de nuestros clientes en el área contable, a través de la prestación
-            de servicios que le ahorran tiempo y dinero que resultan ser
-            elementos muy valiosos para ellos en su día a día.
+            Las declaraciones de impuestos son documentos que se presentan ante los
+            organimos de recaudación gubernamentales. Éstos deben reflejar la cantidad de
+            ingresos obtenidos durante el último año, de modo que en base a ellos se 
+            calcule la cantidad de tributos a cancelar por el contribuyente.
           </h4>
           <form>
             <button type="submit" className="btn btn-success">
@@ -71,15 +70,15 @@ export const Services = () => {
       <div className="descripcion2">
         <div className="texto1">
           <h4>
-            Por ello nos enfocamos en el diseño de herramientas que les generen
-            los documentos que necesitan con más frecuencia haciendo uso de las
-            tecnologías web más potentes del momento, de manera que sus trámites
-            puedan verse lo más agilizados posible. Pasa el mouse sobre ellos
-            para conocerlos un poco más.
+            Si desea recibir asesoría personalizada en el área financiera o desea
+            despejar dudas en cualquier otra área, puede agendar una cita virtual
+            con nuestro personal, quien le atenderá gustosamente, poniendo a su disposición
+            todo nuestro apoyo para ayudarle a solventar sus necesidades
+            en el menor tiempo posible y sin tener que dirigirse a ningún sitio.
           </h4>
           <form>
             <button type="submit" className="btn btn-success">
-              Asesoría Financiera
+              Asesoría Personalizada
             </button>
             <br />
             <br />
@@ -87,23 +86,10 @@ export const Services = () => {
         </div>
         <img src="asesoria.jpg" width="450" height="250" alt="images" />
       </div>
-      <div className="descripcion">
-        <img src="agendar.png" width="450" height="250" alt="images" />
-        <div className="texto1">
-          <h4>
-            Somos una empresa que busca dar respuesta oportuna a las necesidades
-            de nuestros clientes en el área contable, a través de la prestación
-            de servicios que le ahorran tiempo y dinero que resultan ser
-            elementos muy valiosos para ellos en su día a día.
-          </h4>
-          <form>
-            <button type="submit" className="btn btn-success">
-              Agendar una cita
-            </button>
-          </form>
-        </div>
+      <div>
+      <br/><br/>
       </div>
-      <div class="last"></div>
     </div>
+      
   );
 };

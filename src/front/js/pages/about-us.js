@@ -16,7 +16,6 @@ export const AboutUs = () => {
         <img src="contaplus.png" width="350" height="350" alt="images"/>
         <br/>
         <img src="About Us.png" alt="images"/>
-            {/* <h1>¿Quiénes somos?</h1> */}
         </div>
         <div className="descripcion">
         <img src="contador 3.jpg" width="450" height="250" alt="images"/>
@@ -41,7 +40,7 @@ export const AboutUs = () => {
             <img src="Juan.jpg" alt="images"/>
           </div>
           <div className="details">
-            <h2>Juan Cabrera<br/><span>About Us Dev</span></h2>
+            <h2>Juan Cabrera<br/><span>Developer</span></h2>
         </div>
         </div>
         <div className="card">
@@ -49,7 +48,7 @@ export const AboutUs = () => {
                <img src="Miguel.jpg" alt="images"/>
             </div>
             <div className="details">
-               <h2>Miguel Gil<br/><span>Home Dev</span></h2>
+               <h2>Miguel Gil<br/><span>Developer</span></h2>
              </div>
           </div>
           <div className="card">
@@ -57,7 +56,7 @@ export const AboutUs = () => {
                <img src="Julio.jpg" alt="images"/>
             </div>
             <div className="details">
-               <h2>Julio Blando<br/><span>Register Dev</span></h2>
+               <h2>Julio Blando<br/><span>Developer</span></h2>
              </div>
           </div>
           <div className="card">
@@ -65,7 +64,7 @@ export const AboutUs = () => {
                <img src="Oscar.jpg" alt="images"/>
             </div>
             <div className="details">
-               <h2>Oscar Alvarez<br/><span>Log In Dev</span></h2>
+               <h2>Oscar Alvarez<br/><span>Developer</span></h2>
              </div>
           </div>
     </div>
