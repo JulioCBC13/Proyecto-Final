@@ -25,10 +25,15 @@ export const Footer = () => (
             Terms
           </a>
           <span class="text-white mx-1">&middot;</span> */}
-          <Link class="link-light small" to="contact-us">
+          <Link class="link-light small" to="about-us">
+            Nosotros
+            <i class="ms-2 fa-solid fa-users"></i>
+          </Link>
+          <Link class="link-light small ms-4" to="contact-us">
             Contáctanos
             <i class="ms-2 fa-regular fa-envelope"></i>
           </Link>
+          
         </div>
       </div>
     </div>

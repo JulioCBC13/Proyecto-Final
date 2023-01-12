@@ -1,10 +1,15 @@
 import React from "react";
 import "../../styles/contact-us.css";
+import "../../img/Contact title.png";
 
 export const ContactUs = () => {
   return (
-    <section className="boxContacto" id="linkContacto">
-      <h3>Contact us</h3>
+    <div className="Contact" id="linkContacto">
+    <div className="title-page d-flex justify-content-between align-items-center">
+        <img src="contaplus.png" width="310" height="280" alt="Contaplus" />
+        <br />
+        <img src="Contact title.png" alt="Contáctanos" />
+      </div> 
 
       <div className="container contacto">
         <form id="miForm">
@@ -79,6 +84,6 @@ export const ContactUs = () => {
           </button>
         </form>
       </div>
-    </section>
+    </div>
   );
 };

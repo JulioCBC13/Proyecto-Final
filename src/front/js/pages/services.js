@@ -10,7 +10,7 @@ export const Services = () => {
   return (
     <div className="services">
       <div className="title-page d-flex justify-content-between align-items-center">
-        <img src="contaplus.png" width="390" height="350" alt="Contaplus" />
+        <img src="contaplus.png" width="310" height="280" alt="Contaplus" />
         <br />
         <img src="Servicios.png" alt="Servicios" />
       </div>

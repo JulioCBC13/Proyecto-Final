@@ -13,7 +13,7 @@ export const AboutUs = () => {
     return (
         <div className="about-us">
         <div className="title-page d-flex justify-content-center align-items-center">
-        <img src="contaplus.png" width="350" height="350" alt="images"/>
+        <img src="contaplus.png" width="310" height="280" alt="images"/>
         <br/>
         <img src="About Us.png" alt="images"/>
         </div>
@@ -43,14 +43,6 @@ export const AboutUs = () => {
             <h2>Juan Cabrera<br/><span>Developer</span></h2>
         </div>
         </div>
-        <div className="card">
-            <div className="imgBx">
-               <img src="Miguel.jpg" alt="images"/>
-            </div>
-            <div className="details">
-               <h2>Miguel Gil<br/><span>Developer</span></h2>
-             </div>
-          </div>
           <div className="card">
             <div className="imgBx">
                <img src="Julio.jpg" alt="images"/>
