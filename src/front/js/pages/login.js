@@ -9,10 +9,12 @@ export const Login = () => {
           <div className="message">
             <h2>¡Bienvenido al exito!</h2>
             <p>
-              Si ya tienes cuenta por favor inicia sesion aqui, si no registrate
-              ya haciendo click
+              ¡Si ya tienes cuenta por favor inicia sesión, si no registrate
+              ya haciendo click aquí!
             </p>
-            <button className="sign-up-btn">Registrate</button>
+            <div className="sign-up-btn">
+              <a href="registro"><input type="button" value="Registrate"/></a>
+            </div>
           </div>
         </div>
         <form className="formulario">
