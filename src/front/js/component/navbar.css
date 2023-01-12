@@ -7,23 +7,31 @@ nav {
 .btn {
   display: flex;
   width: 110px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
   justify-content: center;
   text-align: center;
   margin-top: 1px;
-  color: #fff;
+  color: #5BD5C9;
   padding: 1px 7px;
-  background-color: #20bf6b;
+  background-color: #10394C;
   border-radius: 10px;
-  border: 2px solid rgb(92, 210, 92);
+  border: 2px solid #DFE3E7;
   box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease 0s;
 }
 .btn:hover {
-  color:black !important;
+  color: #10394C !important;
   background-color: transparent;
-  background-color: red;
+  background-color: #5BD5C9;
+  font-weight: bold;
   border-radius: 6px;
   transition: all 0.2s ease 0s;
   box-shadow: 0px 15px 18px rgba(32, 191, 107, 0.4);
   transform: translateY(-4px);
+}
+
+.nav-link, .dropdown-item, .small{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:larger;
 }

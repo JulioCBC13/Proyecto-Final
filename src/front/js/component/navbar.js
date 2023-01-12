@@ -29,16 +29,16 @@ export const Navbar = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="registro">
+              <Link class="nav-link active" to="registro">
                 Registro
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="login">
+              <Link class="nav-link active" to="login">
                 Login
               </Link>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item active dropdown">
               <Link
                 class="nav-link dropdown-toggle"
                 to="services"
