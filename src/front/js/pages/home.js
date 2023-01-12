@@ -8,10 +8,10 @@ import "../../img/js.png";
 import "../../img/react.png";
 import "../../img/python.png";
 import "../../img/flask.png";
-import "../../img/boostrap.png";
+import "../../img/bootstrap.png";
 import "../../img/github.png";
 import "../../img/gitpod.png";
-import "../../img/postgre.png";
+import "../../img/MySQL.png";
 import "../../img/sql.png";
 import "../../img/bcv.png";
 import "../../img/btc.png";
@@ -284,46 +284,34 @@ export const Home = () => {
             {/*<!-- HERRAMIENTAS/ TECNOLOGIAS/ LENGUAJES USADOS ICONOS-->*/}
             <div class="container px-5 my-5">
               <div class="text-center">
-                <h1 class="fw-bold ">TECNOLOGIAS</h1>
+                <h1 class="fw-bold ">TECNOLOGÍAS</h1>
                 <p class="lead fw-normal text-muted mb-3">
                   {/*<!-- TEXTO AQUI!! -->*/}
                 </p>
               </div>
               {/*<!-- SECCION 1 - 3 iconos -->*/}
               <div class="row gx-5 row-cols-1 row-cols-sm-4 justify-content-center">
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img
-                      class="img-fluid mb-1 px-2"
-                      src="github.png" width="50" height="50"
-                      alt="..."
-                    />
+                    <img class="img-fluid mb-1 px-2" src="github.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img
-                      class="img-fluid mb-1 px-2"
-                      src="gitpod.png" width="50" height="50"
-                      alt="..."
-                    />
+                    <img class="img-fluid mb-1 px-2" src="gitpod.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img
-                      class="img-fluid mb-1 px-2"
-                      src="boostrap.png" width="50" height="50"
-                      alt="..."
-                    />
+                    <img class="img-fluid mb-1 px-2" src="bootstrap.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -333,88 +321,72 @@ export const Home = () => {
               </div>
               {/*<!-- SECCION 2 - 4 iconos -->*/}
               <div class="row gx-5 row-cols-1 row-cols-sm-4 justify-content-center">
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="html.png" width="50" height="50" alt="..." />
+                    <img class="img-fluid mb-1 px-2" src="html.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="css.png" width="50" height="50" alt="..." />
+                    <img class="img-fluid mb-1 px-2" src="css.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="js.png" width="50" height="50" alt="..." />
+                    <img class="img-fluid mb-1 px-2" src="js.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img
-                      class="img-fluid mb-1 px-2"
-                      src="react.png" width="50" height="50"
-                      alt="..."
-                    />
+                    <img class="img-fluid mb-1 px-2" src="react.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img
-                      class="img-fluid mb-1 px-2"
-                      src="flask.png" width="50" height="50"
-                      alt="..."
-                    />
+                    <img class="img-fluid mb-1 px-2" src="flask.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img
-                      class="img-fluid mb-1 px-2"
-                      src="python.png" width="50" height="50"
-                      alt="..."
-                    />
+                    <img class="img-fluid mb-1 px-2" src="python.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img
-                      class="img-fluid mb-1 px-2"
-                      src="postgre.png" width="50" height="50"
-                      alt="..."
-                    />
+                    <img class="img-fluid mb-1 px-2" src="MySQL.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="sql.png" width="50" height="50" alt="..." />
+                    <img class="img-fluid mb-1 px-2" src="sql.png" width="150" height="150"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
