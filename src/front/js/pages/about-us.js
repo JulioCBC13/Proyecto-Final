@@ -6,7 +6,6 @@ import "../../img/reunion.jpg";
 import "../../img/contador 3.jpg";
 import "../../img/Juan.jpg";
 import "../../img/Julio.jpg";
-import "../../img/Miguel.jpg";
 import "../../img/Oscar.jpg";
 
 export const AboutUs = () => {
