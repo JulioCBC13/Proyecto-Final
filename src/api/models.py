@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash,check_password_hash
 
 db = SQLAlchemy()
 
-class Usuario(db.Model):
+class User(db.Model):
     __tablename__ = 'usuarios'
 
     id = db.Column(db.Integer, primary_key=True)
