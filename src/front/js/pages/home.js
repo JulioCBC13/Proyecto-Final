@@ -11,7 +11,6 @@ import "../../img/flask.png";
 import "../../img/bootstrap.png";
 import "../../img/github.png";
 import "../../img/gitpod.png";
-import "../../img/MySQL.png";
 import "../../img/sql.png";
 import "../../img/bcv.png";
 import "../../img/btc.png";
@@ -293,7 +292,7 @@ export const Home = () => {
               <div class="row gx-5 row-cols-1 row-cols-sm-4 justify-content-center">
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="github.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="github.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -302,7 +301,7 @@ export const Home = () => {
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="gitpod.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="gitpod.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -311,7 +310,7 @@ export const Home = () => {
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="bootstrap.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="bootstrap.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -323,7 +322,7 @@ export const Home = () => {
               <div class="row gx-5 row-cols-1 row-cols-sm-4 justify-content-center">
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="html.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="html.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -332,7 +331,7 @@ export const Home = () => {
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="css.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="css.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -341,7 +340,7 @@ export const Home = () => {
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="js.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="js.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -350,7 +349,7 @@ export const Home = () => {
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="react.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="react.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -359,7 +358,7 @@ export const Home = () => {
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="flask.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="flask.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -368,7 +367,7 @@ export const Home = () => {
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="python.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="python.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -377,16 +376,7 @@ export const Home = () => {
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
                   <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="MySQL.png" width="150" height="150"/>
-                    <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
-                    <div class="fst-italic text-muted">
-                      {/*<!-- TEXTO AQUI!! -->*/}
-                    </div>
-                  </div>
-                </div>
-                <div class="col d-flex align-items-center justify-content-center">
-                  <div class="text-center">
-                    <img class="img-fluid mb-1 px-2" src="sql.png" width="150" height="150"/>
+                    <img class="img-fluid mb-1 px-2" src="sql.png" width="100" height="100"/>
                     <h5 class="fw-bolder">{/*<!-- TEXTO AQUI!! -->*/}</h5>
                     <div class="fst-italic text-muted">
                       {/*<!-- TEXTO AQUI!! -->*/}
@@ -426,10 +416,10 @@ export const Home = () => {
               </div>
             </div> -->*/}
             {/*<!-- Call to action-->*/}
-            <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+            <aside class="bg-dark rounded-3 p-4 p-sm-5 mt-5">
               <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
                 <div class="mb-4 mb-xl-0">
-                  <div class="fs-3 fw-bold text-white">AGENDAR CITA</div>
+                  <div class="fs-3 fw-bold text-white">ÚNETE A NUESTRO BOLETÍN SEMANAL</div>
                   <div class="text-white-50">{/*<!-- TEXTO AQUI!! -->*/}</div>
                 </div>
                 <div class="ms-xl-4">
@@ -437,7 +427,7 @@ export const Home = () => {
                     <input
                       class="form-control"
                       type="text"
-                      placeholder="Email address..."
+                      placeholder="Ingresa aquí tu email"
                       aria-label="Email address..."
                       aria-describedby="button-newsletter"
                     />
@@ -446,11 +436,11 @@ export const Home = () => {
                       id="button-newsletter"
                       type="button"
                     >
-                      Que necesitas?
+                    Afiliarme
                     </button>
                   </div>
                   <div class="small text-white-50">
-                    Responderemos todas tus preguntas
+                    Tendrás mucha información de interés y actualizada
                   </div>
                 </div>
               </div>
