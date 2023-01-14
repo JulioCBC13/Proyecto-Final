@@ -6,6 +6,7 @@ import "../../img/html.png";
 import "../../img/css.png";
 import "../../img/js.png";
 import "../../img/react.png";
+import "../../img/dolar.jpg";
 import "../../img/python.png";
 import "../../img/flask.png";
 import "../../img/bootstrap.png";
@@ -13,8 +14,7 @@ import "../../img/github.png";
 import "../../img/gitpod.png";
 import "../../img/sql.png";
 import "../../img/bcv.png";
-import "../../img/btc.png";
-import "../../img/btc.png";
+import "../../img/billetes bs.jpg";
 import "../../img/bolsa.jpg";
 import "../../img/instagram.png";
 import "../../img/facebook.png";
@@ -176,7 +176,7 @@ export const Home = () => {
               <div class="col-lg-4 mb-5">
                 {/* ---------------- card 1 ---------------- */}
                 <div class="card h-100 shadow border-0">
-                  <img class="card-img-top" src="bcv.png" alt="..." />
+                  <img class="card-img-top" src="dolar.jpg" alt="..." />
                   <div class="card-body p-4">
                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">
                       Noticias
@@ -196,21 +196,19 @@ export const Home = () => {
               {/* ---------------- card 2 ---------------- */}
               <div class="col-lg-4 mb-5">
                 <div class="card h-100 shadow border-0">
-                  <img class="card-img-top" src="btc.png" alt="..." />
+                  <img class="card-img-top" src="billetes bs.jpg" alt="..." />
                   <div class="card-body p-4">
                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">
-                      Media
+                      Noticias
                     </div>
                     <a
                       class="text-decoration-none link-dark stretched-link"
                       href="#!"
                     >
-                      <h5 class="card-title mb-3">Another blog post title</h5>
+                      <h5 class="card-title mb-3">Hermes Pérez analiza la causa de la hiperinflación en Venezuela: “la emisión excesiva de dinero”</h5>
                     </a>
                     <p class="card-text mb-0">
-                      This text is a bit longer to illustrate the adaptive
-                      height of each card. Some quick example text to build on
-                      the card title and make up the bulk of the card's content.
+                    El economista y profesor universitario, Hermes Pérez, aseveró que persiste la causa de la hiperinflación en Venezuela por «la emisión excesiva de dinero para financiar (ilegal) al fisco».
                     </p>
                   </div>
                 </div>
