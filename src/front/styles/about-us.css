@@ -7,11 +7,16 @@ body{
 h1,h2,h4,h5,p,input,span,label,textarea{
   font-family: 'Josefin Sans', sans-serif;
 }
-.about-us,.services,.agendar{   
+.about-us,.services,.agendar, .contact{   
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
+  }
+
+  .contact{
+    border: 3px;
+    border-color: #10394D;
   }
   .texto1{
     width: 900px;

@@ -74,7 +74,7 @@ export const Home = () => {
               <div class="col-lg-8 col-xl-7 col-xxl-6">
                 <div class="my-5 text-center text-xl-start">
                   <h1 class="display-5 fst-italic fw-bolder text-white mb-2">
-                    Contaplus el Plus que tu Empresa necesita
+                    Contaplus<br/>el Plus que tu Empresa necesita
                   </h1>
                   <p class="lead fw-normal text-white-50 mb-4">
                     {/*<!-- TEXTO AQUI!! -->*/}
@@ -109,7 +109,7 @@ export const Home = () => {
           <div class="container px-5 my-5">
             <div class="row gx-5">
               <div class="col-lg-4 mb-5 mb-lg-0">
-                <h2 class="fw-bolder mb-0">SERVICIOS</h2>
+                <h1 class="fw-bolder mb-0">SERVICIOS</h1>
               </div>
               <div class="col-lg-8">
                 <div class="row gx-5 row-cols-1 row-cols-md-2">
@@ -117,7 +117,7 @@ export const Home = () => {
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                       <i class="bi bi-collection"></i>
                     </div>
-                    <h2 class="h5">CERTIFICACIÓN DE INGRESOS</h2>
+                    <h2 class="h5">RESPONSABILIDAD</h2>
                     <p class="mb-0">
                       Paragraph of text beneath the heading to explain the
                       heading. Here is just a bit more text.
@@ -127,7 +127,7 @@ export const Home = () => {
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                       <i class="bi bi-building"></i>
                     </div>
-                    <h2 class="h5">DECLARACIÓN DE IMPUESTOS</h2>
+                    <h2 class="h5">PUNTUALIDAD</h2>
                     <p class="mb-0">
                       Paragraph of text beneath the heading to explain the
                       heading. Here is just a bit more text.
@@ -137,7 +137,7 @@ export const Home = () => {
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                       <i class="bi bi-toggles2"></i>
                     </div>
-                    <h2 class="h5">BALANCE PERSONAL</h2>
+                    <h2 class="h5">COMPROMISO</h2>
                     <p class="mb-0">
                       Paragraph of text beneath the heading to explain the
                       heading. Here is just a bit more text.
@@ -147,7 +147,7 @@ export const Home = () => {
                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
                       <i class="bi bi-toggles2"></i>
                     </div>
-                    <h2 class="h5">ASESORÍA FINANCIERA</h2>
+                    <h2 class="h5">PROFESIONALISMO</h2>
                     <p class="mb-0">
                       Paragraph of text beneath the heading to explain the
                       heading. Here is just a bit more text.
@@ -165,7 +165,7 @@ export const Home = () => {
             <div class="row gx-5 justify-content-center">
               <div class="col-lg-8 col-xl-6">
                 <div class="text-center">
-                  <h2 class="fw-bolder">NOVEDADES FINANCIERAS</h2>
+                  <h1 class="fw-bolder">NOVEDADES FINANCIERAS</h1>
                   <p class="lead fw-normal text-muted mb-5">
                     {/*<!-- TEXTO AQUI!! -->*/}
                   </p>

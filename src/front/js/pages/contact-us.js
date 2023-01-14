@@ -1,128 +1,61 @@
 import React from "react";
 import "../../styles/contact-us.css";
 import "../../img/Contact title.png";
+import "../../img/redes sociales.png";
 
 export const ContactUs = () => {
   return (
-    <div className="Contact" id="linkContacto">
+    <div className="contact" id="linkContacto">
     <div className="title-page d-flex justify-content-between align-items-center">
-        <img src="contaplus.png" width="310" height="280" alt="Contaplus" />
+        <img src="redes sociales.png" width="310" height="280" alt="Contaplus" />
         <br />
         <img src="Contact title.png" alt="Contáctanos" />
-      </div> 
-
-      <div className="container contacto">
-        <form id="miForm">
-          <div className="row">
-            <div className="form-group col-md-6">
-              <label for="inputName">
-                <b>First Name</b>
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="inputName"
-                placeholder="First Name..."
-                required
-              />
-            </div>
-            <div className="form-group col-md-6">
-              <label for="inputLastName">
-                <b>Last Name</b>
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="inputLastName"
-                placeholder="Last Name..."
-                required
-              />
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label for="inputEmail">
-              <b>Email</b>
-            </label>
-            <input
-              type="email"
-              className="form-control"
-              id="inputEmail"
-              placeholder="Email..."
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label for="inputSubject">
-              <b>Subject</b>
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="inputSubject"
-              placeholder="Subject..."
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label for="message">
-              <b>Message</b>
-            </label>
-            <textarea
-              className="form-control"
-              rows="5"
-              id="message"
-              placeholder="Message..."
-              required
-            ></textarea>
-          </div>
-
-          <button type="submit" className="botonEnviarMensaje">
-            Send Message
-          </button>
-        </form>
       </div>
-      <div class="p-4 pt-0 bg-success border-top-0">
-                    <div class="d-flex align-items-end justify-content-between">
-                      <div class="d-flex align-items-center">
-                        <img class=" me-3" src="twitter.png" alt="..." />
-                        <div class="small">
-                          <div class="fw-bold">Kelly Rowan</div>
-                          <div class="text-white">
-                            March 12, 2022 &middot; 6 min read
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer p-4 pt-0 bg-danger border-top-0">
+      <div className="descripcion">
+        <img src="contador 3.jpg" width="450" height="250" alt="images"/>
+        <div className="texto1">
+            <h4>Puedes mantenerte en contacto con nosotros siguiéndonos a través de nuestras diferentes cuentas de redes sociales, en las cuales te ofrecemos información actualizada sobre el mundo financiero, tips para mejorar el manejo de tus recursos y muchas cosas más. ¡Anímate y crece con nosotros!</h4>
+            </div>
+        </div>
+        <br/><br/>
+      <div className="container contacto">
+        <div class="p-4 pt-0 border-top-0">
+          <div class="d-flex align-items-end justify-content-between">
+            <div class="d-flex align-items-center">
+              <img class=" me-3" src="twitter.png" alt="..." />
+              <div class="small">
+                <div class="fw-bold"><h1>@contaplus</h1></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div className="container contacto">
+      <div class="card-footer p-4 pt-0 border-top-0">
                     <div class="d-flex align-items-end justify-content-between">
                       <div class="d-flex align-items-center">
                         <img class="me-3" src="instagram.png" alt="..." />
                         <div class="small">
-                          <div class="fw-bold">Josiah Barclay</div>
-                          <div class="text-white">
-                            March 23, 2022 &middot; 4 min read
-                          </div>
+                          <div class="fw-bold"><h1>@contaplus</h1></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-footer p-4 pt-0 bg-primary border-top-0">
+                  </div>
+                  <div className="container contacto">
+                  <div class="card-footer p-4 pt-0 border-top-0">
                     <div class="d-flex align-items-end justify-content-between">
                       <div class="d-flex align-items-center">
                         <img class=" me-3" src="facebook.png" alt="..." />
                         <div class="small">
-                          <div class="fw-bold">Evelyn Martinez</div>
-                          <div class="text-white">
-                            April 2, 2022 &middot; 10 min read
-                          </div>
+                          <div class="fw-bold"><h1>Contaplus</h1></div>
                         </div>
                       </div>
                     </div>
                   </div>
+                  </div>
+                  <br/>
     </div>
   );
 };
