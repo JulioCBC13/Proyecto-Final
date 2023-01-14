@@ -14,10 +14,10 @@ export const Registro = () => {
 
   function registrarUsuario() {
     actions.registrarUsuarioFlux({
-      nombre: name,
-      apellido: lastname,
+      name: name,
+      lastname: lastname,
       email: email,
-      contraseña: password,
+      password: password,
       cedula: cedula,
     });
   }

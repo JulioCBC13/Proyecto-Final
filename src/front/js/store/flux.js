@@ -47,8 +47,18 @@ const getState = ({ getStore, getActions, setStore }) => {
         //reset the global store
         setStore({ demo: demo });
       },
-      registrarUsuarioFlux: (usuario) => {
+      registrarUsuarioFlux: async (usuario) => {
         console.log(usuario);
+        const resp = await fetch(process.env.BACKEND_URL + "/api/registro", {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: JSON.stringify(usuario),
+        });
+        const data = await resp.json();
+        console.log(data);
       },
     },
   };
