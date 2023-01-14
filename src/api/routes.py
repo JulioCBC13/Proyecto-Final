@@ -16,3 +16,29 @@ def handle_hello():
     }
 
     return jsonify(response_body), 200
+
+@api.route('/registro', methods=['POST'])
+def funcionderegistro():
+
+    body = request.json
+    if "name" not in body :
+        return "el usuario no tiene nombre", 400
+    if "lastname" not in body :
+        return "el usuario no tiene apellido", 400
+    if "email" not in body :
+        return "el usuario no tiene email", 400
+    if "password" not in body :
+        return "el usuario no tiene contraseña", 400
+    if "cedula" not in body :
+        return "el usuario no tiene cedula", 400
+
+    nuevo_usuario = User(body["name"],body["lastname"],body["email"],body["password"],body["cedula"])
+    
+    try:
+        db.session.add(nuevo_usuario)
+        db.session.commit()
+
+        return "Se ah creado el Usuario con exito",200 
+
+    except Exception as error:
+        return "como te registras mal?.... animal",500

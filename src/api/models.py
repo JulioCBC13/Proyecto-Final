@@ -10,13 +10,27 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
     lastName = db.Column(db.String(80), nullable=False)
-    username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True,nullable=False)
     password = db.Column(db.String(250), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
     cedula = db.Column(db.String(100), unique=True, nullable=False)
 
-    
+    def __init__(self,name,lastname,email,password,cedula):
+        self.name = name
+        self.lastName = lastname
+        self.email  = email
+        self.password = password
+        self.is_admin = False
+        self.cedula = cedula
+
+    def serialize(self):
+        return {
+            "name" : self.name,
+            "lastname" : self.lastName,
+            "email" : self.email,
+            "cedula" : self.cedula,
+        }   
+
     def __repr__(self):
         return '<User %r>' % self.username
 
@@ -33,7 +47,6 @@ class Contador(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
     lastName = db.Column(db.String(80), nullable=False)
-    username = db.Column(db.String(80), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True,nullable=False)
     password = db.Column(db.String(250), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
