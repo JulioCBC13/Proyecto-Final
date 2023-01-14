@@ -7,12 +7,12 @@ export const ContactUs = () => {
   return (
     <div className="contact" id="linkContacto">
     <div className="title-page d-flex justify-content-between align-items-center">
-        <img src="redes sociales.png" width="310" height="280" alt="Contaplus" />
+        <img src="contaplus.png" width="310" height="280" alt="Contaplus" />
         <br />
         <img src="Contact title.png" alt="Contáctanos" />
       </div>
       <div className="descripcion">
-        <img src="contador 3.jpg" width="450" height="250" alt="images"/>
+        <img src="redes sociales.png" width="450" height="250" alt="images"/>
         <div className="texto1">
             <h4>Puedes mantenerte en contacto con nosotros siguiéndonos a través de nuestras diferentes cuentas de redes sociales, en las cuales te ofrecemos información actualizada sobre el mundo financiero, tips para mejorar el manejo de tus recursos y muchas cosas más. ¡Anímate y crece con nosotros!</h4>
             </div>
