@@ -84,6 +84,45 @@ export const ContactUs = () => {
           </button>
         </form>
       </div>
+      <div class="p-4 pt-0 bg-success border-top-0">
+                    <div class="d-flex align-items-end justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img class=" me-3" src="twitter.png" alt="..." />
+                        <div class="small">
+                          <div class="fw-bold">Kelly Rowan</div>
+                          <div class="text-white">
+                            March 12, 2022 &middot; 6 min read
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer p-4 pt-0 bg-danger border-top-0">
+                    <div class="d-flex align-items-end justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img class="me-3" src="instagram.png" alt="..." />
+                        <div class="small">
+                          <div class="fw-bold">Josiah Barclay</div>
+                          <div class="text-white">
+                            March 23, 2022 &middot; 4 min read
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer p-4 pt-0 bg-primary border-top-0">
+                    <div class="d-flex align-items-end justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img class=" me-3" src="facebook.png" alt="..." />
+                        <div class="small">
+                          <div class="fw-bold">Evelyn Martinez</div>
+                          <div class="text-white">
+                            April 2, 2022 &middot; 10 min read
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
     </div>
   );
 };

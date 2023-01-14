@@ -15,7 +15,7 @@ import "../../img/sql.png";
 import "../../img/bcv.png";
 import "../../img/btc.png";
 import "../../img/btc.png";
-import "../../img/dolar.png";
+import "../../img/bolsa.jpg";
 import "../../img/instagram.png";
 import "../../img/facebook.png";
 import "../../img/twitter.png";
@@ -179,31 +179,17 @@ export const Home = () => {
                   <img class="card-img-top" src="bcv.png" alt="..." />
                   <div class="card-body p-4">
                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">
-                      News
+                      Noticias
                     </div>
                     <a
                       class="text-decoration-none link-dark stretched-link"
                       href="#!"
                     >
-                      <h5 class="card-title mb-3">Blog post title</h5>
+                      <h5 class="card-title mb-3">Tipo de Cambio BCV: 19,4520 Bs./USD (+0,90%) para el lunes 16 de Enero</h5>
                     </a>
                     <p class="card-text mb-0">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    El BCV informa que el tipo de cambio promedio ponderado resultante de las operaciones diarias de las mesas de cambio activas de las instituciones bancarias participantes se ubicó en 19,4520 Bs/USD (+0,90%).
                     </p>
-                  </div>
-                  <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                    <div class="d-flex align-items-end justify-content-between">
-                      <div class="d-flex align-items-center">
-                        <img class=" me-3" src="twitter.png" alt="..." />
-                        <div class="small">
-                          <div class="fw-bold">Kelly Rowan</div>
-                          <div class="text-muted">
-                            March 12, 2022 &middot; 6 min read
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -227,56 +213,29 @@ export const Home = () => {
                       the card title and make up the bulk of the card's content.
                     </p>
                   </div>
-                  <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                    <div class="d-flex align-items-end justify-content-between">
-                      <div class="d-flex align-items-center">
-                        <img class="me-3" src="instagram.png" alt="..." />
-                        <div class="small">
-                          <div class="fw-bold">Josiah Barclay</div>
-                          <div class="text-muted">
-                            March 23, 2022 &middot; 4 min read
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
               {/* ---------------- card 3 ---------------- */}
               <div class="col-lg-4 mb-5">
                 <div class="card h-100 shadow border-0">
-                  <img class="card-img-top" src="dolar.png" alt="..." />
+                  <img class="card-img-top" src="bolsa.jpg" alt="..." />
                   <div class="card-body p-4">
                     <div class="badge bg-primary bg-gradient rounded-pill mb-2">
-                      News
+                      Noticias
                     </div>
                     <a
                       class="text-decoration-none link-dark stretched-link"
                       href="#!"
                     >
                       <h5 class="card-title mb-3">
-                        The last blog post title is a little bit longer than the
-                        others
+                      Índice Bursátil Caracas cerró el #13Ene en 20.236,75 puntos (+1,94%) en 4 días
                       </h5>
                     </a>
                     <p class="card-text mb-0">
-                      Some more quick example text to build on the card title
-                      and make up the bulk of the card's content.
+                    En la Bolsa de Valores de Caracas, entre el 10 y el 13 de enero de 2023, se negoció un total de 8 millones 446 mil 919 bolívares.
                     </p>
                   </div>
-                  <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                    <div class="d-flex align-items-end justify-content-between">
-                      <div class="d-flex align-items-center">
-                        <img class=" me-3" src="facebook.png" alt="..." />
-                        <div class="small">
-                          <div class="fw-bold">Evelyn Martinez</div>
-                          <div class="text-muted">
-                            April 2, 2022 &middot; 10 min read
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
