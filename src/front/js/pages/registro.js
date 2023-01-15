@@ -2,6 +2,8 @@ import React from "react";
 import "./registro.css";
 import { useState, useContext } from "react";
 import { Context } from "../store/appContext";
+import "../../img/Registro title.png";
+import "../../img/registrate.jpg";
 
 export const Registro = () => {
   const { store, actions } = useContext(Context);
@@ -23,13 +25,25 @@ export const Registro = () => {
   }
 
   return (
-    <div className="text-center d-flex" id="registro">
+    <div className="registro text-center d-flex">
+      <div className="title-page d-flex justify-content-around align-items-center">
+        <img src="contaplus.png" width="310" height="280" alt="Contaplus" />
+        <br/>
+        <img src="Registro title.png" alt="Servicios" />
+      </div>
+      <div className="descripcion">
+        <img src="registrate.jpg" width="450" height="250" alt="images"/>
+        <div className="texto1">
+            <h4>Regístrate en nuestra página para que puedas solicitar nuestros servicios y soluciones contables, que te permitirán mantener tanto tus finanzas personales como empresariales al día, de modo que no tengas ningún tipo de contratiempos a la hora de hacer trámites que sean beneficiosos para ti. Únete a nosotros y agiliza tu vida.</h4>
+            </div>
+        </div>
+        <br/><br/>
       <div className="form-signin w-100 m-auto">
         <div className="contenedor bg-dark">
           {/* Texto de saludo */}
           <div className=" p-1 border-bottom border-secondary" id="Registrate">
-            <h1 className="h3 mb-1 fw-normal text-center">Registrate</h1>
-            <p className="mb-1">Es rapido y facil</p>
+            <h1 className="h3 mb-1 fw-normal text-center fw-bolder">Regístrate</h1>
+            <p className="h5 mb-1 fw-bolder">Es rápido y fácil</p>
           </div>
 
           <div className="text-center mt-2">
@@ -87,7 +101,7 @@ export const Registro = () => {
               />
             </div>
 
-            <div className="checkbox mb-3">
+            <div className="checkbox mb-3 text-light">
               <label>
                 <input type="checkbox" value="remember-me" /> Remember me
               </label>
@@ -102,7 +116,9 @@ export const Registro = () => {
             </button>
           </div>
         </div>
+        <br/><br/>
       </div>
     </div>
+      
   );
 };

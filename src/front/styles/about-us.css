@@ -7,7 +7,7 @@ body{
 h1,h2,h4,h5,p,input,span,label,textarea{
   font-family: 'Josefin Sans', sans-serif;
 }
-.about-us,.services,.agendar, .contact{   
+.about-us,.services,.agendar,.contact,.registro{   
     display: flex;
     flex-direction: column;
     justify-content:center;

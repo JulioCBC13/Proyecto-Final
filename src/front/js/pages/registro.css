@@ -6,29 +6,25 @@
   padding: 20px;
   padding-bottom: 45px;
   box-sizing: content-box;
-  color: white;
+  color: #10394C;
   border-radius: 10px;
-  box-shadow: inset 0 10em 5em -5em #105a7c6e;
-}
-
-#registro {
-  margin-top: 100px;
+  box-shadow: inset 0 15em 5em -5em #5BD5C9;
 }
 
 #NombreApellido {
   display: flex;
   flex-direction: row;
-  color: black;
+  color: rgb(0, 0, 0);
   padding-left: 5px;
 }
 
 #Registrate {
-  border-bottom: rgb(143, 31, 31);
+  border-bottom: #10394C;
 
   margin-bottom: 2px;
 }
 
 #boton {
-  background-color: rgb(92, 210, 92) !important;
+  background-color: #5bd5c9 !important;
   border: 0px;
 }
