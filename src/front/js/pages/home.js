@@ -182,13 +182,13 @@ export const Home = () => {
                       Noticias
                     </div>
                     <a
-                      class="text-decoration-none link-dark stretched-link"
-                      href="#!"
+                      class="text-decoration-none link-dark stretched-link" id="link"
+                      href="https://www.bcv.org.ve/" target={"_blank"}
                     >
                       <h5 class="card-title mb-3">Tipo de Cambio BCV: 19,4520 Bs./USD (+0,90%) para el lunes 16 de Enero</h5>
                     </a>
                     <p class="card-text mb-0">
-                    El BCV informa que el tipo de cambio promedio ponderado resultante de las operaciones diarias de las mesas de cambio activas de las instituciones bancarias participantes se ubicó en 19,4520 Bs/USD (+0,90%).
+                    El BCV informa que el tipo de cambio promedio ponderado resultante de las operaciones diarias de las mesas de cambio activas de las instituciones bancarias participantes se ubicó en 19,4520 Bs/USD (+0,90%). Para más información en www.bcv.org.ve haciendo click a este anuncio
                     </p>
                   </div>
                 </div>
@@ -222,15 +222,15 @@ export const Home = () => {
                       Noticias
                     </div>
                     <a
-                      class="text-decoration-none link-dark stretched-link"
-                      href="#!"
+                      class="text-decoration-none link-dark stretched-link" id="link"
+                      href="https://www.bolsadecaracas.com/" target={"_blank"}
                     >
                       <h5 class="card-title mb-3">
                       Índice Bursátil Caracas cerró el #13Ene en 20.236,75 puntos (+1,94%) en 4 días
                       </h5>
                     </a>
                     <p class="card-text mb-0">
-                    En la Bolsa de Valores de Caracas, entre el 10 y el 13 de enero de 2023, se negoció un total de 8 millones 446 mil 919 bolívares.
+                    En la Bolsa de Valores de Caracas, entre el 10 y el 13 de enero de 2023, se negoció un total de 8 millones 446 mil 919 bolívares. Para más información en www.bolsadecaracas.com haciendo click a este anuncio
                     </p>
                   </div>
                   
