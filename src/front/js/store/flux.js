@@ -60,6 +60,24 @@ const getState = ({ getStore, getActions, setStore }) => {
         const data = await resp.json();
         console.log(data);
       },
+
+      // 'LOGIN'
+      loginFlux: async (email, password) => {
+        console.log(email, password);
+        const resp = await fetch(process.env.BACKEND_URL + "/api/login", {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: JSON.stringify({
+            email: email,
+            password: password,
+          }),
+        });
+        const data = await resp.json();
+        console.log(data);
+      },
     },
   };
 };

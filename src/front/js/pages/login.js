@@ -6,23 +6,23 @@ import "../../img/Login title.png";
 import "../../img/login.jpg";
 
 export const Login = () => {
-    const { store, actions } = useContext(Context);
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const navigate = useNavigate();
-    const token = sessionStorage.getItem("token");
-    // console.log("Tu token ok", store.token);
-  
-    function login() {
-      actions.loginFlux({
-        email: email,
-        contraseña: password,
-      })
-    }
-  
-    useEffect(() => {
-      if (store.token && store.token != "") navigate("/");
-    }, [store.token]);
+  const { store, actions } = useContext(Context);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const token = sessionStorage.getItem("token");
+  // console.log("Tu token ok", store.token);
+
+  function login() {
+    actions.loginFlux({      
+      email: email,
+      password: password,      
+    });
+  }
+
+  useEffect(() => {
+    if (store.token && store.token != "") navigate("/");
+  }, [store.token]);
 
   return (
     <div className="registro text-center d-flex">
