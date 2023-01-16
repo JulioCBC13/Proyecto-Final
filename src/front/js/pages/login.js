@@ -2,8 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
 import { useNavigate } from "react-router-dom";
 import "../../styles/login.css";
-//import "../../img/Login title.png";
-//import "../../img/login.jpg";
 import loginT from "../../img/Login title.png";
 import sesion from "../../img/login.jpg";
 

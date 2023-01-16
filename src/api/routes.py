@@ -42,3 +42,28 @@ def funcionderegistro():
 
     except Exception as error:
         return "como te registras mal?.... animal",500
+
+"""
+Para login
+"""
+
+@api.route('/login', methods=['POST'])
+def funciondelogin():
+
+    body = request.json    
+    if "email" not in body :
+        return "el usuario no tiene email", 400
+    if "password" not in body :
+        return "el usuario no tiene contraseña", 400
+    
+
+    usuario = User(body["email"],body["password"])
+    
+    try:
+        db.session.add(usuario)
+        db.session.commit()
+
+        return "Ha iniciado con exito",200 
+
+    except Exception as error:
+        return "msg":"Fallido, hay un dato incorrecto",500
