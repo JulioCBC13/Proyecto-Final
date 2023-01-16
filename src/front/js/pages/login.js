@@ -76,7 +76,7 @@ export const Login = () => {
                 aria-describedby="inputGroup-sizing-default"                
               />
               <input                
-                type="text"
+                type="password"
                 autoFocus
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
