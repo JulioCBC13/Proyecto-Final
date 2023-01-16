@@ -1,5 +1,5 @@
 import React from "react";
-import "./registro.css";
+import "../../styles/registro.css";
 import { useState, useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../img/Registro title.png";
