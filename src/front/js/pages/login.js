@@ -1,15 +1,19 @@
-import React from "react";
-import "../../styles/login.css";
-import { useState, useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
-import "../../img/Login title.png";
-import "../../img/login.jpg";
+import { useNavigate } from "react-router-dom";
+import "../../styles/login.css";
+//import "../../img/Login title.png";
+//import "../../img/login.jpg";
+import loginT from "../../img/Login title.png";
+import sesion from "../../img/login.jpg";
 
 export const Login = () => {
-  const { store, actions } = useContext(Context);  
+  const { store, actions } = useContext(Context);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+  const navigate = useNavigate();
+  const token = sessionStorage.getItem("token");
+  // console.log("Tu token ok", store.token);
 
   function login() {
     actions.loginFlux({      
@@ -18,15 +22,19 @@ export const Login = () => {
     });
   }
 
+  useEffect(() => {
+    if (store.token && store.token != "") navigate("/");
+  }, [store.token]);
+
   return (
     <div className="registro text-center d-flex">
       <div className="title-page d-flex justify-content-around align-items-center">
         <img src="contaplus.png" width="310" height="280" alt="Contaplus" />
         <br />
-        <img src="Login title.png" alt="Servicios" />
+        <img src={loginT} alt="Servicios" />
       </div>
       <div className="descripcion">
-        <img src="login.jpg" width="450" height="250" alt="img" />
+        <img src={sesion} width="450" height="250" alt="img" />
         <div className="texto1">
           <h4>
             Inicia tu futuro ahora
