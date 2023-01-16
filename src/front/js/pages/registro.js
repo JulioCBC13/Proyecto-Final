@@ -100,14 +100,8 @@ export const Registro = () => {
                 placeholder="C.I"
               />
             </div>
-
-            <div className="checkbox mb-3 text-light">
-              <label>
-                <input type="checkbox" value="remember-me" /> Remember me
-              </label>
-            </div>
             <button
-              className="w-100 btn btn-lg btn active"
+              className="btnCrear w-100 btn btn-lg btn active"
               type="submit"
               id="boton"
               onClick={registrarUsuario}
