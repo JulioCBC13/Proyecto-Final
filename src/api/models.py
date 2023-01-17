@@ -63,3 +63,36 @@ class Contador(db.Model):
 
     def check_password(self,password):
         return check_password_hash(self.password, password)
+
+
+class BalanceP(db.Model):
+    __tablename__ = 'balance'
+
+    id = db.Column(db.Integer, primary_key=True)
+    completeName = db.Column(db.String(80), nullable=False)
+    cedula = db.Column(db.String(100), unique=True, nullable=False)
+    bancoInfo = db.Column(db.String(100), unique=True, nullable=False)
+    vehiculosAmount = db.Column(db.String(100), unique=True, nullable=False)
+    propiedadesAmount = db.Column(db.String(100), unique=True, nullable=False)
+
+class CertificacionI(db.Model):
+    __tablename__ = 'ingresos'
+
+    id = db.Column(db.Integer, primary_key=True)
+    completeName = db.Column(db.String(80), nullable=False)
+    cedula = db.Column(db.String(100), unique=True, nullable=False)
+    promedioMensual = db.Column(db.String(100), unique=True, nullable=False)
+    ocupacion = db.Column(db.String(100), unique=True, nullable=False)
+    
+class DeclaracionImp(db.Model):
+    __tablename__ = 'impuestos'
+
+    id = db.Column(db.Integer, primary_key=True)
+    completeName = db.Column(db.String(80), nullable=False)
+    cedula = db.Column(db.String(100), unique=True, nullable=False)
+    ingresos = db.Column(db.String(100), unique=True, nullable=False)
+    costos = db.Column(db.String(100), unique=True, nullable=False)
+    gastos = db.Column(db.String(100), unique=True, nullable=False)
+    
+    
+    
