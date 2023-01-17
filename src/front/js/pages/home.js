@@ -19,6 +19,9 @@ import "../../img/bolsa.jpg";
 import "../../img/instagram.png";
 import "../../img/facebook.png";
 import "../../img/twitter.png";
+import "../../img/carrusel1.jpg";
+import "../../img/carrusel2.jpg";
+import "../../img/carrusel3.jpg";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
@@ -35,24 +38,24 @@ export const Home = () => {
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="contaplus.png" width="200" height="500" class="d-block w-100" alt="..."/>
+          <img src="carrusel1.jpg" width="200" height="500" class="d-block w-100" alt="..."/>
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h3>Cada bolívar cuenta</h3>
+            <h4>Todos menosprecian al Bolívar pero ¿puedes deshacerte de él por completo?</h4>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="bcv.png" width="200" height="500" class="d-block w-100" alt="..."/>
+          <img src="carrusel2.jpg" width="200" height="500" class="d-block w-100" alt="..."/>
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h3>Cuentas claras conservan empresas</h3>
+            <h4>La importancia de llevar un control estricto de las finanzas de una empresa</h4>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="contador 3.jpg" width="200" height="500" class="d-block w-100" alt="..."/>
+          <img src="carrusel3.jpg" width="200" height="500" class="d-block w-100" alt="..."/>
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h3>Herramientas que facilitan la comprensión</h3>
+            <h4>Los gráficos pueden ayudarte a entender mejor las altas y las bajas de tu negocio</h4>
           </div>
         </div>
       </div>
@@ -82,7 +85,7 @@ export const Home = () => {
                   <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                     <a
                       class="btn btn-primary btn-lg px-4 me-sm-3"
-                      href="#features"
+                      href="services"
                     >
                       Nuestros Servicios
                     </a>
