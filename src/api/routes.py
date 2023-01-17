@@ -57,13 +57,20 @@ def funciondelogin():
         return "el usuario no tiene contraseña", 400
     
 
-    usuario = User(body["email"],body["password"])
+    email = body.get("email", None)
+    password = body.get("password", None)
+    User.query.filter_by(email=email, password=password).one_or_none()
+
+    if usuario != None:
+        return jsonify({ "token": create_access_token(identity=email) })
+    return jsonify({"msg": "Usuario y Contrateña invalida"})
+    #usuario = User(body["email"],body["password"])
     
-    try:
-        db.session.add(usuario)
-        db.session.commit()
+    # try:
+    #     db.session.add(usuario)
+    #     db.session.commit()
 
-        return "Ha iniciado con exito",200 
+    #     return "Ha iniciado con exito",200 
 
-    except Exception as error:
-        return "msg":"Fallido, hay un dato incorrecto",500
+    # except Exception as error:
+    #     return jsonify({"msg":"Fallido, hay un dato incorrecto"}),500
