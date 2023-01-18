@@ -62,9 +62,14 @@ def funciondelogin():
     password = body.get("password", None)
     usuario = User.query.filter_by(email=email, password=password).one_or_none()
 
+
     if usuario != None:
-        return jsonify({ "token": create_access_token(identity=email) })
-    return jsonify({"msg": "Usuario y Contrateña invalida"})
+        contador = Contador.query.filter_by(email=email, password=password).one_or_none()
+        if contador != None:
+            return jsonify({"msg": "Usuario y Contrateña invalida"})
+        return jsonify({ "token": create_access_token(identity=email),"contador":True })
+    return jsonify({ "token": create_access_token(identity=email),"usuario":True })
+    
     #usuario = User(body["email"],body["password"])
     
     # try:

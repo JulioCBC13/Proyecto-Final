@@ -53,7 +53,23 @@ class Contador(db.Model):
     cedula = db.Column(db.String(100), unique=True, nullable=False)
     cpc = db.Column(db.String(8), unique=True, nullable=False)
     
+    def __init__(self,name,lastname,email,password,cedula,cpc):
+        self.name = name
+        self.lastName = lastname
+        self.email  = email
+        self.password = password
+        self.is_admin = False
+        self.cedula = cedula
+        self.cpc = cpc
 
+    def serialize(self):
+        return {
+            "name" : self.name,
+            "lastname" : self.lastName,
+            "email" : self.email,
+            "cedula" : self.cedula,
+            "cpc" : self.cpc
+        }   
     
     def __repr__(self):
         return '<Contador %r>' % self.Contador
