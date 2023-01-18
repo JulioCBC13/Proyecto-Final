@@ -2,7 +2,7 @@ const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
       message: null,
-      token: null,
+      token: localStorage.getItem("token"),
       demo: [
         {
           title: "FIRST",
@@ -63,7 +63,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       // 'LOGIN'
       loginFlux: async (email, password) => {
-        console.log(email, password);
         const resp = await fetch(process.env.BACKEND_URL + "/api/login", {
           method: "POST", // *GET, POST, PUT, DELETE, etc.
           headers: {
@@ -77,7 +76,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         });
         const data = await resp.json();
         setStore({ token: data.token });
-        console.log(data);
+        localStorage.setItem("token", data.token);
       },
     },
   };
