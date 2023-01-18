@@ -26,18 +26,7 @@ export const Login = () => {
 
   return (
     <div className="registro text-center d-flex">
-      <div className="title-page d-flex justify-content-around align-items-center">
-        <img src="contaplus.png" width="310" height="280" alt="Contaplus" />
-        <br/>
-        <img src="Login title.png" alt="Servicios" />
-      </div>
-      <div className="descripcion">
-        <img src="login.jpg" width="450" height="250" alt="images"/>
-        <div className="texto1">
-            <h4>Inicia sesión en nuestra página para que puedas solicitar nuestros servicios y soluciones contables, que te permitirán mantener tanto tus finanzas personales como empresariales al día, de modo que no tengas ningún tipo de contratiempos a la hora de hacer trámites que sean beneficiosos para ti. Únete a nosotros y agiliza tu vida.</h4>
-            </div>
-        </div>
-        <br/><br/>
+      <br/><br/><br/>
       <div className="form-signin w-100 m-auto">
         <div className="contenedor2 bg-dark">
           {/* Texto de saludo */}
@@ -91,7 +80,7 @@ export const Login = () => {
                 <input className="fw-bolder" type="button" value="Regístrate" />
               </a>
             </div>
-            <br/><br/>
+            <br/><br/><br/>
           </div>
         </div>
     </div>

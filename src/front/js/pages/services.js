@@ -23,9 +23,15 @@ export const Services = () => {
             detalles debidamente ordenados acerca de los activos, pasivos y patrimonios
             que se poseen en un momento determinado.
           </h4>
-          <form>
+          <form className="d-flex justify-content-start">
+            <button type="submit" className="btn">
+              Solicitud del Cliente
+            </button>
             <button type="submit" className="btn btn-success">
-              Balance Personal
+              Aviso de solicitud realizada
+            </button>
+            <button type="submit" className="btn btn-success">
+              Solicitud completada. Lista para descarga.
             </button>
           </form>
         </div>
