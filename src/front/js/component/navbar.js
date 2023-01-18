@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "/workspace/Proyecto-Final/src/front/js/component/navbar.css";
 import "../../img/logo navbar.png";
+import { Context } from "../store/appContext";
 
 export const Navbar = () => {
+  const { store, actions } = useContext(Context);
   return (
     <nav className="navbar navbar-dark navbar-expand-lg ">
       <div className="container-fluid">
-          <img src="logo navbar.png" width="50" height="40" />
+        <img src="logo navbar.png" width="50" height="40" />
         <button
           className="navbar-toggler"
           type="button"
@@ -26,16 +28,21 @@ export const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link active" to="registro">
-                Registro
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link active" to="login">
-                Login
-              </Link>
-            </li>
+            {!store.token && (
+              <li className="nav-item">
+                <Link className="nav-link active" to="registro">
+                  Registro
+                </Link>
+              </li>
+            )}
+            {!store.token && (
+              <li className="nav-item">
+                <Link className="nav-link active" to="login">
+                  Login
+                </Link>
+              </li>
+            )}
+
             <li className="nav-item active dropdown">
               <Link
                 className="nav-link dropdown-toggle"

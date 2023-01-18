@@ -2,6 +2,7 @@ const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
       message: null,
+      token: null,
       demo: [
         {
           title: "FIRST",
@@ -58,7 +59,6 @@ const getState = ({ getStore, getActions, setStore }) => {
           body: JSON.stringify(usuario),
         });
         const data = await resp.json();
-        console.log(data);
       },
 
       // 'LOGIN'
@@ -76,6 +76,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           }),
         });
         const data = await resp.json();
+        setStore({ token: data.token });
         console.log(data);
       },
     },
