@@ -18,7 +18,6 @@ gunicorn = "*"
 cloudinary = "*"
 flask-admin = "*"
 typing-extensions = "*"
-flask-jwt = "*"
 flask-jwt-extended = "*"
 
 [requires]

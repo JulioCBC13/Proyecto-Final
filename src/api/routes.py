@@ -59,7 +59,7 @@ def funciondelogin():
 
     email = body.get("email", None)
     password = body.get("password", None)
-    User.query.filter_by(email=email, password=password).one_or_none()
+    usuario = User.query.filter_by(email=email, password=password).one_or_none()
 
     if usuario != None:
         return jsonify({ "token": create_access_token(identity=email) })
