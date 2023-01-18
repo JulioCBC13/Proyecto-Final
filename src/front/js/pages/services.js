@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "/workspace/Proyecto-Final/src/front/styles/services.css";
 import "../../img/Servicios.png";
 import "../../img/balance.jpg";
@@ -24,13 +25,15 @@ export const Services = () => {
             que se poseen en un momento determinado.
           </h4>
           <form className="d-flex justify-content-start">
+          <Link to="/balance">
             <button type="submit" className="btn">
               Solicitud del Cliente
             </button>
-            <button type="submit" className="btn btn-success">
+            </Link>
+            <button type="submit" className="btn">
               Aviso de solicitud realizada
             </button>
-            <button type="submit" className="btn btn-success">
+            <button type="submit" className="btn">
               Solicitud completada. Lista para descarga.
             </button>
           </form>
@@ -45,9 +48,17 @@ export const Services = () => {
             recibos de nómina o facturas de ventas que permitan corroborar que dichos
             ingresos son exactos y provienen de actividades lícitas.
           </h4>
-          <form>
+          <form className="d-flex justify-content-start">
+          <Link to="/ingresos">
             <button type="submit" className="btn btn-success">
               Certificación de Ingresos
+            </button>
+            </Link>
+            <button type="submit" className="btn">
+              Aviso de solicitud realizada
+            </button>
+            <button type="submit" className="btn">
+              Solicitud completada. Lista para descarga.
             </button>
             <br />
             <br />
@@ -64,9 +75,17 @@ export const Services = () => {
             ingresos obtenidos durante el último año, de modo que en base a ellos se 
             calcule la cantidad de tributos a cancelar por el contribuyente.
           </h4>
-          <form>
+          <form className="d-flex justify-content-start">
+          <Link to="/impuestos">
             <button type="submit" className="btn btn-success">
               Declaración de Impuestos
+            </button>
+            </Link>
+            <button type="submit" className="btn">
+              Aviso de solicitud realizada
+            </button>
+            <button type="submit" className="btn">
+              Solicitud completada. Lista para descarga.
             </button>
             <br />
             <br />
@@ -82,9 +101,17 @@ export const Services = () => {
             todo nuestro apoyo para ayudarle a solventar sus necesidades
             en el menor tiempo posible y sin tener que dirigirse a ningún sitio.
           </h4>
-          <form>
+          <form className="d-flex justify-content-start">
+          <Link to="/asesoria">
             <button type="submit" className="btn btn-success">
               Asesoría Personalizada
+            </button>
+            </Link>
+            <button type="submit" className="btn">
+              Aviso de solicitud realizada
+            </button>
+            <button type="submit" className="btn">
+              Solicitud completada. Lista para descarga.
             </button>
             <br />
             <br />

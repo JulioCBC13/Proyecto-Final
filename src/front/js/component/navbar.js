@@ -7,9 +7,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-dark navbar-expand-lg ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
           <img src="logo navbar.png" width="50" height="40" />
-        </a>
         <button
           className="navbar-toggler"
           type="button"
