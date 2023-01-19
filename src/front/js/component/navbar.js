@@ -76,11 +76,14 @@ export const Navbar = () => {
               </ul>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <button className="btn btn-outline-light" type="submit">
-              Cerrar Sesión
-            </button>
-          </form>
+          <Link to="/">
+              <button
+                className="btn  register"
+                onClick={() => actions.logout()}
+              >
+                Cerrar Sesión
+              </button>
+            </Link>
         </div>
       </div>
     </nav>

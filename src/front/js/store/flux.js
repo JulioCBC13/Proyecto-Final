@@ -78,6 +78,11 @@ const getState = ({ getStore, getActions, setStore }) => {
         setStore({ token: data.token });
         localStorage.setItem("token", data.token);
       },
+      logout: () => {
+        const token = sessionStorage.removeItem("token");
+        console.log("Se han borrado todos los tokens");
+        setStore({ token: null });
+      },
     },
   };
 };
