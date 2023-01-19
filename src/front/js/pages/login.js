@@ -69,29 +69,33 @@ export const Login = () => {
               Entrar
             </button>
           </div>
-        </div>
-        <br />
-        <br />
-      </div>
-      <div className="welcome-back">
+          <br/>
+          <div className="welcome-back">
         <div className="message">
-          <h2 className="fw-bolder">
+          <h4 className="fw-bolder">
             ¡Bienvenido al éxito!
             <br />
             <br />
             Si no tienes cuenta con nosotros, por favor regístrate ya haciendo
             click en:
-          </h2>
+          </h4>
           <div className="sign-up-btn">
             <a href="registro">
               <input className="fw-bolder" type="button" value="Regístrate" />
+              <br/><br/><br/><br/>
             </a>
           </div>
-          <br />
-          <br />
-          <br />
+          
         </div>
       </div>
+        </div>
+        <br />
+        <br />
+      </div>
+      
+      <br/>
+      <br/>
+      <br/>
     </div>
   );
 };

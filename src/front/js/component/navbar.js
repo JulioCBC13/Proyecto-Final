@@ -77,14 +77,8 @@ export const Navbar = () => {
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Ingrese su texto aquí"
-              aria-label="Search"
-            />
             <button className="btn btn-outline-light" type="submit">
-              Buscar
+              Cerrar Sesión
             </button>
           </form>
         </div>
