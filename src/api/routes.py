@@ -2,7 +2,7 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 from flask import Flask, request, jsonify, url_for, Blueprint
-from api.models import db, User, Contador
+from api.models import db, User, Contador, BalanceP
 from api.utils import generate_sitemap, APIException
 from flask_jwt_extended import create_access_token
 
@@ -70,13 +70,33 @@ def funciondelogin():
         return jsonify({ "token": create_access_token(identity=email),"contador":True })
     return jsonify({ "token": create_access_token(identity=email),"usuario":True })
     
-    #usuario = User(body["email"],body["password"])
+
+@api.route('/balance', methods=['POST'])
+def balancepersonal():
+
+    body = request.json
+    if "completeName" not in body :
+        return jsonify({"error":"Falto Nombre Completo"}), 400
+    if "cedula" not in body :
+        return jsonify({"error":"Falto Cedula"}), 400
+    if "bancoInfo" not in body :
+        return jsonify({"error":"Falto Informacion de Banco"}), 400
+    if "vehiculosAmount" not in body :
+        return jsonify({"error":"Falto Cantidad de Vehiculos"}), 400
+    if "propiedadesAmount" not in body :
+        return jsonify({"error":"Falto Cantidad de Propiedades"}), 400
+
+    nuevo_balance_personal = BalanceP(body["completeName"],body["cedula"],body["bancoInfo"],body["vehiculosAmount"],body["propiedadesAmount"])
     
-    # try:
-    #     db.session.add(usuario)
-    #     db.session.commit()
+    try:
+        db.session.add(nuevo_balance_personal)
+        db.session.commit()
 
-    #     return "Ha iniciado con exito",200 
+        return "Se han registrado tus datos con exito",200 
 
-    # except Exception as error:
-    #     return jsonify({"msg":"Fallido, hay un dato incorrecto"}),500
+    except Exception as error:
+        return "hermano solo tienes que llenar los campos",500
+
+   
+
+    

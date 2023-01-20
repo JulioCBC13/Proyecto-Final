@@ -91,6 +91,23 @@ class BalanceP(db.Model):
     vehiculosAmount = db.Column(db.String(100), unique=True, nullable=False)
     propiedadesAmount = db.Column(db.String(100), unique=True, nullable=False)
 
+    def __init__(self,completeName,cedula,bancoInfo,vehiculosAmount,propiedadesAmount):
+        self.completeName = completeName
+        self.cedula  = cedula
+        self.bancoInfo = bancoInfo
+        self.vehiculosAmount = vehiculosAmount
+        self.propiedadesAmount = propiedadesAmount
+        
+
+    def serialize(self):
+        return {
+            "completeName" : self.completeName,
+            "cedula" : self.cedula,
+            "bancoInfo" : self.bancoInfo,
+            "vehiculosAmount" : self.vehiculosAmount,
+            "propiedadesAmount" : self.propiedadesAmount
+        } 
+
 class CertificacionI(db.Model):
     __tablename__ = 'ingresos'
 
