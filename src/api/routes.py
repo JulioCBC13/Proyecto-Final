@@ -2,7 +2,7 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 from flask import Flask, request, jsonify, url_for, Blueprint
-from api.models import db, User
+from api.models import db, User, Contador
 from api.utils import generate_sitemap, APIException
 from flask_jwt_extended import create_access_token
 
@@ -63,7 +63,7 @@ def funciondelogin():
     usuario = User.query.filter_by(email=email, password=password).one_or_none()
 
 
-    if usuario != None:
+    if usuario == None:
         contador = Contador.query.filter_by(email=email, password=password).one_or_none()
         if contador != None:
             return jsonify({"msg": "Usuario y Contrateña invalida"})

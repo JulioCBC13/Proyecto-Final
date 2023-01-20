@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/registro.css";
 import { useState, useContext } from "react";
 import { Context } from "../store/appContext";
+import { useNavigate } from "react-router-dom";
 import "../../img/Registro title.png";
 import "../../img/registrate.jpg";
 
@@ -13,6 +14,7 @@ export const Registro = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [cedula, setCedula] = useState("");
+  const navigate = useNavigate();
 
   function registrarUsuario() {
     actions.registrarUsuarioFlux({
@@ -22,6 +24,7 @@ export const Registro = () => {
       password: password,
       cedula: cedula,
     });
+    navigate("/login");
   }
 
   return (

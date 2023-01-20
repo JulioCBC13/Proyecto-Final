@@ -77,9 +77,9 @@ export const Navbar = () => {
             </li>
           </ul>
           <Link to="/">
-            <button className="btn  register" onClick={() => actions.logout()}>
-              Cerrar Sesión
+            <button className="btn  register" onClick={() => actions.logout()}>Salir                        
             </button>
+            <i className="fa-solid fa-right-from-bracket fa-2x"></i>
           </Link>
         </div>
       </div>
