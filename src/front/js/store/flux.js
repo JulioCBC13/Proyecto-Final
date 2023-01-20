@@ -14,7 +14,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           background: "white",
           initial: "white",
         },
-      ],
+      ],     
     },
     actions: {
       // Use getActions to call a function within a fuction
@@ -63,23 +63,66 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       // 'LOGIN'
       loginFlux: async (email, password) => {
-        const resp = await fetch(process.env.BACKEND_URL + "/api/login", {
-          method: "POST", // *GET, POST, PUT, DELETE, etc.
+        const opts = {
+          method: "POST",
           headers: {
             "Content-Type": "application/json",
-            // 'Content-Type': 'application/x-www-form-urlencoded',
           },
           body: JSON.stringify({
             email: email,
             password: password,
           }),
-        });
-        const data = await resp.json();
-        setStore({ token: data.token });
-        localStorage.setItem("token", data.token);
+        };
+
+        try {
+          const resp = await fetch(
+            `${process.env.BACKEND_URL}/api/login`,
+            opts
+          );
+          if (resp.status !== 200) {
+            const mensaje = await resp.json();
+            alert(mensaje.msg);
+            return false;
+          }
+
+          const data = await resp.json();
+          console.log("Viene del backend", data);
+          sessionStorage.setItem("token", data.token);
+          setStore({ token: data.token });
+          return true;
+        } catch (error) {
+          console.error("Error al hacer login");
+        }
       },
+      syncTokenSessionStore: () => {
+        const token = sessionStorage.getItem("token");
+        console.log(
+          "La aplicacion acaba de cargar, sincronizando el token de session storage"
+        );
+        if (token && token != "" && token != undefined)
+          setStore({ token: token });
+          else {
+            actions.logout();
+          }
+      },
+      // loginFlux: async (email, password) => {
+      //   const resp = await fetch(process.env.BACKEND_URL + "/api/login", {
+          // method: "POST", // *GET, POST, PUT, DELETE, etc.
+          // headers: {
+          //   "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        //   },
+        //   body: JSON.stringify({
+        //     email: email,
+        //     password: password,
+        //   }),
+        // });
+        // const data = await resp.json();
+        // setStore({ token: data.token });
+        // sessionStorage.setItem("token", data.token);
+      //},
       logout: () => {
-        const token = sessionStorage.removeItem("token");
+        const token = localStorage.removeItem("token");
         console.log("Se han borrado todos los tokens");
         setStore({ token: null });
       },

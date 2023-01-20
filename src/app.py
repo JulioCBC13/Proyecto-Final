@@ -16,7 +16,7 @@ from flask_jwt_extended import create_access_token
 from flask_jwt_extended import get_jwt_identity
 from flask_jwt_extended import jwt_required
 from flask_jwt_extended import JWTManager
-from datetime import timedelta
+# from datetime import timedelta
 
 
 #from models import Person
@@ -27,7 +27,7 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 app.config["JWT_SECRET_KEY"] = "wjwjwjwjw"  # Change this!
-app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(hours = 10)
+# app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(hours = 10)
 jwt = JWTManager(app)
 
 # database condiguration
