@@ -77,13 +77,10 @@ export const Navbar = () => {
             </li>
           </ul>
           <Link to="/">
-              <button
-                className="btn  register"
-                onClick={() => actions.logout()}
-              >
-                Cerrar Sesión
-              </button>
-            </Link>
+            <button className="btn  register" onClick={() => actions.logout()}>
+              Cerrar Sesión
+            </button>
+          </Link>
         </div>
       </div>
     </nav>

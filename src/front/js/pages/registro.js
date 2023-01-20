@@ -25,13 +25,23 @@ export const Registro = () => {
   }
 
   return (
-    <div className="registro text-center d-flex flex-column"> {/* bg-danger*/}
-    <br/><br/><br/><br/><br/>
-      <div className="form-signin m-auto"> {/* bg-success*/}
+    <div className="registro text-center d-flex flex-column">
+      {" "}
+      {/* bg-danger*/}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="form-signin m-auto">
+        {" "}
+        {/* bg-success*/}
         <div className="contenedor bg-dark">
           {/* Texto de saludo */}
           <div className=" p-1 border-bottom border-secondary" id="Registrate">
-            <h1 className="h3 mb-1 fw-normal text-center fw-bolder">Regístrate</h1>
+            <h1 className="h3 mb-1 fw-normal text-center fw-bolder">
+              Regístrate
+            </h1>
             <p className="h5 mb-1 fw-bolder">Es rápido y fácil</p>
           </div>
 
@@ -99,9 +109,14 @@ export const Registro = () => {
             </button>
           </div>
         </div>
-        <br/><br/><br/><br/><br/><br/><br/>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
-      
   );
 };
