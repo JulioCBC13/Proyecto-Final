@@ -37,7 +37,7 @@ export const Balance = () => {
         <br/><br/>
         <label for="formFile" className="form-label"><h5>Ingrese su información bancaria:</h5></label>
         <br/>
-        <input type="text"/>
+        <input type="file"/>
         <br/><br/>
         <label for="formFile" className="form-label"><h5>Ingrese la cantidad de vehículos que posee:</h5></label>
         <br/>
