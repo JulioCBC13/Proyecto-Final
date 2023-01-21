@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../styles/about-us.css";
 import "../../img/About Us.png";
 import "../../img/contaplus.png";
@@ -9,6 +9,11 @@ import "../../img/Julio.jpg";
 import "../../img/Oscar.jpg";
 
 export const AboutUs = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+
     return (
         <div className="about-us">
         <div className="title-page d-flex justify-content-center align-items-center">

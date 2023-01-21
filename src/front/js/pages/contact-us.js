@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../../styles/contact-us.css";
 import "../../img/Contact title.png";
 import "../../img/redes sociales.png";
 
 export const ContactUs = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <div className="contact" id="linkContacto">
     <div className="title-page d-flex justify-content-between align-items-center">
