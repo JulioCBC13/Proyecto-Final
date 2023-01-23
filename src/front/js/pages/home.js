@@ -481,7 +481,54 @@ export const Home = () => {
                 </div>
               </div>
             </div> -->*/}
+              
               {/*<!-- Call to action-->*/}
+
+              <div class="accordion" id="accordionExample">
+              <div className="text-center">
+                  <h1 className="fw-bold ">PREGUNTAS FRECUENTES</h1>
+                </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ¿Por qué necesito un contador?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Si trabajas de forma independiente necesitarás Inscripción en el SENIAT, presentar declaraciones juradas y mantenerte constantemente actualizado. Contar con el conocimiento de un especialista te permitirá reducir riesgos, ahorrar mucho tiempo y tomar decisiones acertadas.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        ¿Puedo contar con un contador online?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Claro! Es la forma más eficiente de tener asesoramiento oportuno y siempre disponible.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        ¿Cuánto cuesta un contador online?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Nos especializamos en emprendedores, e-commerce y empresas digitales. Contamos con planes especialmente pensados para cada actividad. A través de una breve llamada, te recomendaremos la propuesta que mejor se adapte a tu necesidad. Contrata Valor.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
               <aside className="bg-dark rounded-3 p-4 p-sm-5 mt-5">
                 <div className="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
                   <div className="mb-4 mb-xl-0">

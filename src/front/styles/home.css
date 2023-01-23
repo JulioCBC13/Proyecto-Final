@@ -41,3 +41,12 @@
 .card:hover .imgBx {
   bottom: 80px;
 }
+
+/* .accordion{
+  
+} */
+.accordion-item,.accordion-button{
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #10394d;
+  color:#5bd5c9;
+}
