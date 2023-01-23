@@ -17,7 +17,7 @@ export const AboutUs = () => {
     return (
         <div className="about-us">
         <div className="title-page d-flex justify-content-center align-items-center">
-        <img src="contaplus.png" width="310" height="280" alt="images"/>
+        <img src="contaplus2.png" width="310" height="280" alt="images"/>
         <br/>
         <img src="About Us.png" alt="images"/>
         </div>

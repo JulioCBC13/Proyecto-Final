@@ -10,7 +10,7 @@ export const ContactUs = () => {
   return (
     <div className="contact" id="linkContacto">
     <div className="title-page d-flex justify-content-between align-items-center">
-        <img src="contaplus.png" width="310" height="280" alt="Contaplus" />
+        <img src="contaplus2.png" width="310" height="280" alt="Contaplus" />
         <br />
         <img src="Contact title.png" alt="Contáctanos" />
       </div>

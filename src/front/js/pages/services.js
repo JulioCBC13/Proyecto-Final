@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Link } from "react-router-dom";
 import "/workspace/Proyecto-Final/src/front/styles/services.css";
 import "../../img/Servicios.png";
@@ -6,12 +6,16 @@ import "../../img/balance.jpg";
 import "../../img/ingresos.jpg";
 import "../../img/impuestos.png";
 import "../../img/asesoria.jpg";
+import "../../img/contaplus2.png";
 
 export const Services = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <div className="services">
       <div className="title-page d-flex justify-content-between align-items-center">
-        <img src="contaplus.png" width="310" height="280" alt="Contaplus" />
+        <img src="contaplus2.png" width="310" height="280" alt="Contaplus" />
         <br />
         <img src="Servicios.png" alt="Servicios" />
       </div>
