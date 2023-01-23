@@ -50,3 +50,8 @@
   background-color: #10394d;
   color:#5bd5c9;
 }
+
+.accordion-button:not(.collapsed) {
+  color: #10394c;
+  background-color: #5BD5C9;
+}
