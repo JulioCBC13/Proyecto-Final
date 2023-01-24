@@ -342,6 +342,163 @@ export const Home = () => {
                   </div>
                 </div>
               </div>
+              
+
+              {/*<!-- Testimonial section
+            <div className="py-5 bg-light">
+              <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                  <div class="col-lg-10 col-xl-7">
+                    <div class="text-center">
+                      <div class="fs-4 mb-4 fst-italic">
+                        "Working with Start Bootstrap templates has saved me
+                        tons of development time when building new projects!
+                        Starting with a Bootstrap template just makes things
+                        easier!"
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center">
+                        <img
+                          class="rounded-circle me-3"
+                          src="https://dummyimage.com/40x40/ced4da/6c757d"
+                          alt="..."
+                        />
+                        <div class="fw-bold">
+                          Tom Ato
+                          <span class="fw-bold text-primary mx-1">/</span>
+                          CEO, Pomodoro
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->*/}
+              
+              {/*<!-- Call to action-->*/}
+
+              <div class="accordion" id="accordionExample">
+              <div className="text-center">
+                  <h1 className="fw-bold ">PREGUNTAS FRECUENTES</h1>
+                </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ¿Por qué necesito un contador?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Si trabajas de forma independiente necesitarás Inscripción en el SENIAT, presentar declaraciones juradas y mantenerte constantemente actualizado. Contar con el conocimiento de un especialista te permitirá reducir riesgos, ahorrar mucho tiempo y tomar decisiones acertadas.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        ¿Puedo contar con un contador online?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Claro! Es la forma más eficiente de tener asesoramiento oportuno y siempre disponible.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        ¿Cuánto cuesta un contador online?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Nos especializamos en emprendedores, e-commerce y empresas digitales. Contamos con planes especialmente pensados para cada actividad. A través de una breve llamada, te recomendaremos la propuesta que mejor se adapte a tu necesidad. Contrata Valor.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      ¿Cuánto tiempo tengo para declarar las retenciones de ISLR siendo contribuyente ordinario?
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Todas las retenciones aplicadas en un periodo son declaradas al mes posterior de las misma y tendrás tiempo de declararlas dentro de los 10 primeros días corrientes de cada mes si eres contribuyente ordinario.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      ¿Quiénes están sujetos a pagar el IGTF?
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      Todas las personas naturales y jurídicas están sujetas al IGTF cuando pagan en divisas o cualquier instrumento monetario diferente al bolívar o criptomonedas distintas al Petro.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      ¿Cuál es la alícuota de este impuesto y sobre qué base se calcula?
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      La alícuota del IGTF es del 0,75% y aplica sobre el importe total de los débitos en cuenta o de las operaciones gravadas. El IGTF será determinado diariamente. Existe la obligación de pagar el IGTF cuando ocurra el pago o cancelación de una cuenta o deuda. la base imponible del IGTF es el importe total pagado en moneda extranjera y/o Criptoactivos, excluyendo las retenciones de impuesto sobre la renta e IVA, las cuales claramente no forman parte de lo pagado en moneda extranjera y/o Criptoactivos.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+      ¿Todos los comercios deben cobrar este impuesto?
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      No. Solo los comercios o empresas que hayan sido designados sujetos pasivos especiales tienen el deber de ser agentes de percepción del IGTF por los pagos que reciban en moneda extranjera.
+      </div>
+    </div>
+  </div>
+</div>
+              <aside className="bg-dark rounded-3 p-4 p-sm-5 mt-5">
+                <div className="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                  <div className="mb-4 mb-xl-0">
+                    <div className="fs-3 fw-bold text-white">
+                      ÚNETE A NUESTRO BOLETÍN SEMANAL
+                    </div>
+                    <div className="text-white-50">
+                      {/*<!-- TEXTO AQUI!! -->*/}
+                    </div>
+                  </div>
+                  <div className="ms-xl-4">
+                    <div className="input-group mb-2">
+                      <input
+                        className="form-control"
+                        type="text"
+                        placeholder="Ingresa aquí tu email"
+                        aria-label="Email address..."
+                        aria-describedby="button-newsletter"
+                      />
+                      <button
+                        className="btn btn-outline-light"
+                        id="button-newsletter"
+                        type="button"
+                      >
+                        Afiliarme
+                      </button>
+                    </div>
+                    <div className="small text-white-50">
+                      Tendrás mucha información de interés y actualizada
+                    </div>
+                  </div>
+                </div>
+              </aside>
               {/*<!-- HERRAMIENTAS/ TECNOLOGIAS/ LENGUAJES USADOS ICONOS-->*/}
               <div className="container px-5 my-5">
                 <div className="text-center">
@@ -451,117 +608,6 @@ export const Home = () => {
                   </div>
                 </div>
               </div>
-
-              {/*<!-- Testimonial section
-            <div className="py-5 bg-light">
-              <div class="container px-5 my-5">
-                <div class="row gx-5 justify-content-center">
-                  <div class="col-lg-10 col-xl-7">
-                    <div class="text-center">
-                      <div class="fs-4 mb-4 fst-italic">
-                        "Working with Start Bootstrap templates has saved me
-                        tons of development time when building new projects!
-                        Starting with a Bootstrap template just makes things
-                        easier!"
-                      </div>
-                      <div class="d-flex align-items-center justify-content-center">
-                        <img
-                          class="rounded-circle me-3"
-                          src="https://dummyimage.com/40x40/ced4da/6c757d"
-                          alt="..."
-                        />
-                        <div class="fw-bold">
-                          Tom Ato
-                          <span class="fw-bold text-primary mx-1">/</span>
-                          CEO, Pomodoro
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->*/}
-              
-              {/*<!-- Call to action-->*/}
-
-              <div class="accordion" id="accordionExample">
-              <div className="text-center">
-                  <h1 className="fw-bold ">PREGUNTAS FRECUENTES</h1>
-                </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        ¿Por qué necesito un contador?
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-      Si trabajas de forma independiente necesitarás Inscripción en el SENIAT, presentar declaraciones juradas y mantenerte constantemente actualizado. Contar con el conocimiento de un especialista te permitirá reducir riesgos, ahorrar mucho tiempo y tomar decisiones acertadas.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        ¿Puedo contar con un contador online?
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-      Claro! Es la forma más eficiente de tener asesoramiento oportuno y siempre disponible.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        ¿Cuánto cuesta un contador online?
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-      Nos especializamos en emprendedores, e-commerce y empresas digitales. Contamos con planes especialmente pensados para cada actividad. A través de una breve llamada, te recomendaremos la propuesta que mejor se adapte a tu necesidad. Contrata Valor.
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-              <aside className="bg-dark rounded-3 p-4 p-sm-5 mt-5">
-                <div className="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-                  <div className="mb-4 mb-xl-0">
-                    <div className="fs-3 fw-bold text-white">
-                      ÚNETE A NUESTRO BOLETÍN SEMANAL
-                    </div>
-                    <div className="text-white-50">
-                      {/*<!-- TEXTO AQUI!! -->*/}
-                    </div>
-                  </div>
-                  <div className="ms-xl-4">
-                    <div className="input-group mb-2">
-                      <input
-                        className="form-control"
-                        type="text"
-                        placeholder="Ingresa aquí tu email"
-                        aria-label="Email address..."
-                        aria-describedby="button-newsletter"
-                      />
-                      <button
-                        className="btn btn-outline-light"
-                        id="button-newsletter"
-                        type="button"
-                      >
-                        Afiliarme
-                      </button>
-                    </div>
-                    <div className="small text-white-50">
-                      Tendrás mucha información de interés y actualizada
-                    </div>
-                  </div>
-                </div>
-              </aside>
             </div>
           </section>
         </main>
