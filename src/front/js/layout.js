@@ -15,9 +15,13 @@ import { Registro } from "./pages/registro";
 import { AboutUs } from "./pages/about-us";
 import { Services } from "./pages/services";
 import { Balance } from "./pages/balance";
+import { BalanceDatos } from "./pages/datos-balance";
 import { Asesoria } from "./pages/asesoria";
+import { AsesoriaDatos } from "./pages/datos-asesoria";
 import { Ingresos } from "./pages/ingresos";
+import { IngresosDatos } from "./pages/datos-ingresos";
 import { Impuestos } from "./pages/impuestos";
+import { ImpuestosDatos } from "./pages/datos-impuestos";
 
 //create your first component
 const Layout = () => {
@@ -41,9 +45,13 @@ const Layout = () => {
             <Route element={<AboutUs />} path="/about-us" />
             <Route element={<Services />} path="/services" />
             <Route element={<Balance />} path="/balance" />
+            <Route element={<BalanceDatos />} path="/datos-balance" />
             <Route element={<Ingresos />} path="/ingresos" />
+            <Route element={<IngresosDatos />} path="/datos-ingresos" />
             <Route element={<Impuestos />} path="/impuestos" />
+            <Route element={<ImpuestosDatos />} path="/datos-impuestos" />
             <Route element={<Asesoria />} path="/asesoria" />
+            <Route element={<AsesoriaDatos />} path="/datos-asesoria" />
           </Routes>
           <Footer />
         </ScrollToTop>

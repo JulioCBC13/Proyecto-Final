@@ -1,14 +1,14 @@
 import React from "react";
-import "../../img/Ingresos title.png";
+import "../../img/Ingresos datos.png";
 import "../../img/ingresos.jpg";
 
-export const Ingresos = () => {
+export const IngresosDatos = () => {
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
         <img src="contaplus2.png" width="310" height="280" alt="Contaplus" />
         <br />
-        <img src="Ingresos title.png" alt="Servicios" />
+        <img src="Ingresos datos.png" alt="Servicios" />
       </div>      
       <div className="descripcion">
         <img src="ingresos.jpg" width="450" height="250" alt="images" />
@@ -25,28 +25,16 @@ export const Ingresos = () => {
       <br/><br/>
       <div className="valores">
       <div>
-            <h1>Solicite una Certificación de Ingresos a continuación:</h1>
+        <h1>Datos de la Certificación de Ingresos solicitada:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Ingrese su nombre completo:</h5></label>
-        <br/>
-        <input type="text"/>
+        <label for="formFile" className="form-label"><h5>Nombre completo:</h5></label>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
-        <br/>
-        <input type="text"/>
+        <label for="formFile" className="form-label"><h5>Cédula de identidad:</h5></label>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su ingreso promedio mensual:</h5></label>
-        <br/>
-        <input type="text"/>
+        <label for="formFile" className="form-label"><h5>Ingreso promedio mensual:</h5></label>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su profesión u ocupación:</h5></label>
-        <br/>
-        <input type="text"/>
+        <label for="formFile" className="form-label"><h5>Profesión u ocupación:</h5></label>
         <br/><br/>
-        <button type="submit" className="btn btn-success">
-              Enviar solicitud
-            </button>
-            <br/><br/>
       </div>
     </div>
   );

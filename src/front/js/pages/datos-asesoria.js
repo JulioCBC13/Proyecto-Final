@@ -1,14 +1,14 @@
 import React from "react";
-import "../../img/Asesoria title.png";
+import "../../img/Asesoria datos.png";
 import "../../img/asesoria.jpg";
 
-export const Asesoria = () => {
+export const AsesoriaDatos = () => {
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
         <img src="contaplus2.png" width="310" height="280" alt="Contaplus" />
         <br />
-        <img src="Asesoria title.png" alt="Servicios" />
+        <img src="Asesoria datos.png" alt="Servicios" />
       </div>      
       <div className="descripcion">
         <img src="asesoria.jpg" width="450" height="250" alt="images" />
@@ -25,24 +25,14 @@ export const Asesoria = () => {
       <br/><br/>
       <div className="valores">
       <div>
-            <h1>Agende una cita a continuación:</h1>
+        <h1>Datos de la cita solicitada:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Haga click en el calendario y seleccione la fecha de la cita:</h5></label>
-        <br/>
-        <input type="date"/>
+        <label for="formFile" className="form-label"><h5>Fecha de la cita:</h5></label>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Haga click en el reloj y seleccione la hora de la cita:</h5></label>
-        <br/>
-        <input type="time"/>
+        <label for="formFile" className="form-label"><h5>Hora de la cita:</h5></label>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Explique el motivo de la cita:</h5></label>
-        <br/>
-        <textarea name="textarea" rows="5" cols="50"/>
+        <label for="formFile" className="form-label"><h5>Motivo de la cita:</h5></label>
         <br/><br/>
-        <button type="submit" className="btn btn-success">
-              Enviar solicitud
-            </button>
-            <br/><br/>
       </div>
     </div>
   );

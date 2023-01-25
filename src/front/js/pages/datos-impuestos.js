@@ -1,14 +1,14 @@
 import React from "react";
-import "../../img/Impuestos title.png";
+import "../../img/Impuestos datos.png";
 import "../../img/impuestos.png";
 
-export const Impuestos = () => {
+export const ImpuestosDatos = () => {
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
         <img src="contaplus2.png" width="310" height="280" alt="Contaplus" />
         <br />
-        <img src="Impuestos title.png" alt="Servicios" />
+        <img src="Impuestos datos.png" alt="Servicios" />
       </div>      
       <div className="descripcion">
         <img src="impuestos.png" width="450" height="250" alt="images" />
@@ -24,32 +24,18 @@ export const Impuestos = () => {
       <br/><br/>
       <div className="valores">
       <div>
-            <h1>Solicite una Declaración de Impuestos a continuación:</h1>
+        <h1>Datos de la Declaración de Impuestos solicitada:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Ingrese su nombre completo:</h5></label>
-        <br/>
-        <input type="text"/>
+        <label for="formFile" className="form-label"><h5>Nombre completo:</h5></label>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
-        <br/>
-        <input type="text"/>
+        <label for="formFile" className="form-label"><h5>Cédula de identidad:</h5></label>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Indique sus ingresos:</h5></label>
-        <br/>
-        <input type="text"/>
+        <label for="formFile" className="form-label"><h5>Ingresos:</h5></label>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Indique sus costos:</h5></label>
-        <br/>
-        <input type="text"/>
+        <label for="formFile" className="form-label"><h5>Costos:</h5></label>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Indique sus gastos:</h5></label>
-        <br/>
-        <input type="text"/>
+        <label for="formFile" className="form-label"><h5>Gastos:</h5></label>
         <br/><br/>
-        <button type="submit" className="btn btn-success">
-              Enviar solicitud
-            </button>
-            <br/><br/>
       </div>
     </div>
   );

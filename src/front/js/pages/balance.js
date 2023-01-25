@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../../img/Balance title.png";
 import "../../img/balance.jpg";
 
