@@ -97,6 +97,9 @@ def balancepersonal():
     except Exception as error:
         return "hermano solo tienes que llenar los campos",500
 
-   
+@api.route('/balance', methods=['GET'])
+def datos_balance():
+    return jsonify([balance.serialize() for balance in BalanceP.query.all()]),200
+
 
     

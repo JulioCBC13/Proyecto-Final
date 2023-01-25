@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { Context } from "../store/appContext";
 import "../../img/Balance title.png";
 import "../../img/balance.jpg";
 
 export const Balance = () => {
+  const { store, actions } = useContext(Context);
+
+  const [nombreCompleto,setNombreCompleto] = useState("");
+  const [Cedula,setCedula] = useState("");
+  const [infoBancos,setInfoBancos] = useState("");
+  const [infoCarros,setInfoCarros] = useState("");
+  const [infoCasas,setInfoCasas] = useState("");
+
+
+  const crearBalance = ()=> {
+    actions.nuevoBalance({completeName: nombreCompleto, cedula: Cedula, bancoInfo: infoBancos, vehiculosAmount: infoCarros, propiedadesAmount: infoCasas});
+  }
+
+
+
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
@@ -26,28 +42,28 @@ export const Balance = () => {
       <div>
             <h1>Solicite un Balance Personal a continuación:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Ingrese su nombre completo:</h5></label>
         <br/>
-        <input type="text"/>
+        <label  className="form-label"><h5>Ingrese su nombre completo:</h5></label>
+        <input value={nombreCompleto} onChange={(e)=> setNombreCompleto(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
+        <label className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={Cedula} onChange={(e)=> setCedula(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su información bancaria:</h5></label>
+        <label  className="form-label"><h5>Ingrese su información bancaria:</h5></label>
         <br/>
-        <input type="file"/>
+        <input value={infoBancos} onChange={(e)=> setInfoBancos(e.target.value)} type="file"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese la cantidad de vehículos que posee:</h5></label>
+        <label className="form-label"><h5>Ingrese la cantidad de vehículos que posee:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={infoCarros} onChange={(e)=> setInfoCarros(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese la cantidad de propiedades que posee:</h5></label>
+        <label className="form-label"  ><h5>Ingrese la cantidad de propiedades que posee:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={infoCasas} onChange={(e)=> setInfoCasas(e.target.value)} type="text"/>
         <br/><br/>
-        <button type="submit" className="btn btn-success">
-              Enviar solicitud
+        <button onClick={crearBalance} type="submit" className="btn btn-success">
+              Solicitar Balance
             </button>
             <br/><br/>
       </div>

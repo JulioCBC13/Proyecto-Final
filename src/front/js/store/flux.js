@@ -1,6 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
+      listaBalances:[],
       message: null,
       token: localStorage.getItem("token"),
       demo: [
@@ -126,6 +127,30 @@ const getState = ({ getStore, getActions, setStore }) => {
         console.log("Se han borrado todos los tokens");
         setStore({ token: null });
       },
+
+      loadBalances: async()=>{
+        const resp = await fetch(process.env.BACKEND_URL + "/api/balance")
+        const data = await resp.json();
+        console.log(data);
+        setStore({listaBalances: data})
+      },
+
+      
+      
+      nuevoBalance: async (balance)=>{
+        console.log("se creó el balance",balance);
+        const resp = await fetch(process.env.BACKEND_URL + "/api/balance", {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: JSON.stringify(balance),
+        });
+
+
+      }
+
     },
   };
 };
