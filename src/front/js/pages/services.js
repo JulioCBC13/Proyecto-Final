@@ -34,9 +34,11 @@ export const Services = () => {
               Solicitud del Cliente
             </button>
             </Link>
+            <Link to="/datos-balance">
             <button type="submit" className="btn">
               Aviso de solicitud realizada
             </button>
+            </Link>
             <button type="submit" className="btn">
               Solicitud completada. Lista para descarga.
             </button>
@@ -58,9 +60,11 @@ export const Services = () => {
               Certificación de Ingresos
             </button>
             </Link>
+            <Link to="/datos-ingresos">
             <button type="submit" className="btn">
               Aviso de solicitud realizada
             </button>
+            </Link>
             <button type="submit" className="btn">
               Solicitud completada. Lista para descarga.
             </button>
@@ -85,9 +89,11 @@ export const Services = () => {
               Declaración de Impuestos
             </button>
             </Link>
+            <Link to="/datos-impuestos">
             <button type="submit" className="btn">
               Aviso de solicitud realizada
             </button>
+            </Link>
             <button type="submit" className="btn">
               Solicitud completada. Lista para descarga.
             </button>
@@ -111,9 +117,11 @@ export const Services = () => {
               Asesoría Personalizada
             </button>
             </Link>
+            <Link to="/datos-asesoria">
             <button type="submit" className="btn">
               Aviso de solicitud realizada
             </button>
+            </Link>
             <button type="submit" className="btn">
               Solicitud completada. Lista para descarga.
             </button>
