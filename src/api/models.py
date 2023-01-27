@@ -116,6 +116,22 @@ class CertificacionI(db.Model):
     cedula = db.Column(db.String(100), unique=True, nullable=False)
     promedioMensual = db.Column(db.String(100), unique=True, nullable=False)
     ocupacion = db.Column(db.String(100), unique=True, nullable=False)
+
+    def __init__(self,completeName,cedula,promedioMensual,ocupacion):
+        self.completeName = completeName
+        self.cedula  = cedula
+        self. promedioMensual = promedioMensual
+        self. ocupacion = ocupacion
+        
+        
+
+    def serialize(self):
+        return {
+            "completeName" : self.completeName,
+            "cedula" : self.cedula,
+            "promedioMensual" : self.promedioMensual,
+            "ocupacion" : self.ocupacion
+        } 
     
 class DeclaracionImp(db.Model):
     __tablename__ = 'impuestos'
@@ -126,6 +142,23 @@ class DeclaracionImp(db.Model):
     ingresos = db.Column(db.String(100), unique=True, nullable=False)
     costos = db.Column(db.String(100), unique=True, nullable=False)
     gastos = db.Column(db.String(100), unique=True, nullable=False)
+
+    def __init__(self,completeName,cedula,bancoInfo,vehiculosAmount,propiedadesAmount):
+        self.completeName = completeName
+        self.cedula  = cedula
+        self.ingresos = ingresos
+        self.costos = costos
+        self.gastos = gastos
+        
+
+    def serialize(self):
+        return {
+            "completeName" : self.completeName,
+            "cedula" : self.cedula,
+            "ingresos" : self.ingresos,
+            "costos" : self.costos,
+            "gastos" : self.gastos
+        } 
     
     
     

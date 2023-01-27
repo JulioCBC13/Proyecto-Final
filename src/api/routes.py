@@ -71,6 +71,8 @@ def funciondelogin():
     return jsonify({ "token": create_access_token(identity=email),"usuario":True })
     
 
+# Para Balance Personal
+
 @api.route('/balance', methods=['POST'])
 def balancepersonal():
 
@@ -101,5 +103,61 @@ def balancepersonal():
 def datos_balance():
     return jsonify([balance.serialize() for balance in BalanceP.query.all()]),200
 
+# Para Certificacion de Ingresos
 
+
+@api.route('/ingresos', methods=['POST'])
+def CertificacionIngresos():
+
+    body = request.json
+    if "completeName" not in body :
+        return jsonify({"error":"Falto Nombre Completo"}), 400
+    if "cedula" not in body :
+        return jsonify({"error":"Falto Cedula"}), 400
+    if "promedioMensual" not in body :
+        return jsonify({"error":"Falto Promedio Mensual"}), 400
+    if "ocupacion" not in body :
+        return jsonify({"error":"Falto Ocupacion"}), 400
     
+
+    nuevo_certificacion_ingresos = CertificacionI(body["completeName"],body["cedula"],body["promedioMensual"],body["ocupacion"])
+    
+    try:
+        db.session.add(nuevo_certificacion_ingresos)
+        db.session.commit()
+
+        return "Se han registrado tus datos con exito",200 
+
+    except Exception as error:
+        return "hermano solo tienes que llenar los campos",500
+
+
+
+# Para declaracion de Impuestos
+
+@api.route('/impuestos', methods=['POST'])
+def DeclaracionImpuestos():
+
+    body = request.json
+    if "completeName" not in body :
+        return jsonify({"error":"Falto Nombre Completo"}), 400
+    if "cedula" not in body :
+        return jsonify({"error":"Falto Cedula"}), 400
+    if "ingresos" not in body :
+        return jsonify({"error":"Falto Ingresos"}), 400
+    if "costos" not in body :
+        return jsonify({"error":"Falto Costos"}), 400   
+    if "gastos" not in body :
+        return jsonify({"error":"Falto Gastos"}), 400
+    
+
+    nuevo_declaracion_impuestos = DeclaracionImp(body["completeName"],body["cedula"],body["ingresos"],body["costos"],body["gastos"])
+    
+    try:
+        db.session.add(nuevo_declaracion_impuestos)
+        db.session.commit()
+
+        return "Se han registrado tus datos con exito",200 
+
+    except Exception as error:
+        return "hermano solo tienes que llenar los campos",500
