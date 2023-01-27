@@ -143,7 +143,7 @@ class DeclaracionImp(db.Model):
     costos = db.Column(db.String(100), unique=True, nullable=False)
     gastos = db.Column(db.String(100), unique=True, nullable=False)
 
-    def __init__(self,completeName,cedula,bancoInfo,vehiculosAmount,propiedadesAmount):
+    def __init__(self,completeName,cedula,ingresos,costos,gastos):
         self.completeName = completeName
         self.cedula  = cedula
         self.ingresos = ingresos
@@ -160,5 +160,26 @@ class DeclaracionImp(db.Model):
             "gastos" : self.gastos
         } 
     
+class Asesoria(db.Model):
+    __tablename__ = 'asesoria'
+
+    id = db.Column(db.Integer, primary_key=True)
+    motivo = db.Column(db.String(80), nullable=False)
+    date = db.Column(db.Date, nullable=False)
+    time =  db.Column(db.Time, nullable=False)
     
+   
+
+    def __init__(self,completeName,date,time):
+        self.motivo = motivo
+        self.date = date
+        self.time = time
+        
+
+    def serialize(self):
+        return {
+            "motivo" : self.motivo,
+            "date" : self.date,
+            "time" : self.time
+        } 
     

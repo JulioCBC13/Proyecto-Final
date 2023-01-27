@@ -161,3 +161,27 @@ def DeclaracionImpuestos():
 
     except Exception as error:
         return "hermano solo tienes que llenar los campos",500
+
+
+@api.route('/asesoria', methods=['POST'])
+def Asesoria():
+
+    body = request.json
+    if "completeName" not in body :
+        return jsonify({"error":"Falto Nombre Completo"}), 400
+    if "date" not in body :
+        return jsonify({"error":"Falto Dia"}), 400
+    if "time" not in body :
+        return jsonify({"error":"Falto Hora"}), 400
+    
+
+    nuevo_asesoria = Asesoria(body["completeName"],body["date"],body["time"])
+    
+    try:
+        db.session.add(nuevo_asesoria)
+        db.session.commit()
+
+        return "Se han registrado tus datos con exito",200 
+
+    except Exception as error:
+        return "hermano solo tienes que llenar los campos",500
