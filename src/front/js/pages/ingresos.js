@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { Context } from "../store/appContext";
 import "../../img/Ingresos title.png";
 import "../../img/ingresos.jpg";
 
 export const Ingresos = () => {
+  const { store, actions } = useContext(Context);
+
+  const [nombreCompleto, setNombreCompleto] = useState("");
+  const [Cedula, setCedula] = useState("");
+  const [promIngMensual, setPromIngMensual] = useState("");
+  const [profesion, setProfesion] = useState("");
+
+  const crearCertifIngresos = async () => {
+    actions.nuevaCertifIngresos({
+      completeName: nombreCompleto,
+      cedula: Cedula,
+      promedioMensual: promIngMensual,
+      ocupacion: profesion,
+    });
+  };
+  
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
@@ -27,23 +44,23 @@ export const Ingresos = () => {
       <div>
             <h1>Solicite una Certificación de Ingresos a continuación:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Ingrese su nombre completo:</h5></label>
+        <label className="form-label"><h5>Ingrese su nombre completo:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={nombreCompleto} onChange={(e) => setNombreCompleto(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
+        <label className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={Cedula} onChange={(e) => setCedula(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su ingreso promedio mensual:</h5></label>
+        <label className="form-label"><h5>Ingrese su ingreso promedio mensual:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={promIngMensual} onChange={(e) => setPromIngMensual(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su profesión u ocupación:</h5></label>
+        <label className="form-label"><h5>Ingrese su profesión u ocupación:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={profesion} onChange={(e) => setProfesion(e.target.value)} type="text"/>
         <br/><br/>
-        <button type="submit" className="btn btn-success">
+        <button onClick={crearCertifIngresos} type="submit" className="btn btn-success">
               Enviar solicitud
             </button>
             <br/><br/>

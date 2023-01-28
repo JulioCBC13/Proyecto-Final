@@ -2,6 +2,7 @@ const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
       listaBalances:[],
+      listaIngresos:[],
       message: null,
       token: localStorage.getItem("token"),
       demo: [
@@ -134,6 +135,12 @@ const getState = ({ getStore, getActions, setStore }) => {
         console.log(data);
         setStore({listaBalances: data})
       },
+      loadIngresos: async()=>{
+        const resp = await fetch(process.env.BACKEND_URL + "/api/ingresos")
+        const data = await resp.json();
+        console.log(data);
+        setStore({listaIngresos: data})
+      },
 
       
       
@@ -147,8 +154,18 @@ const getState = ({ getStore, getActions, setStore }) => {
           },
           body: JSON.stringify(balance),
         });
+      },
 
-
+ nuevaCertifIngresos: async (ingresos)=>{
+        console.log("se creó la certificación de ingresos",ingresos);
+        const resp = await fetch(process.env.BACKEND_URL + "/api/ingresos", {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: JSON.stringify(ingresos),
+        });
       }
 
     },

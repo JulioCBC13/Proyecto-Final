@@ -74,6 +74,7 @@ export const Balance = () => {
         <label className="form-label">
           <h5>Ingrese su nombre completo:</h5>
         </label>
+        <br />
         <input
           value={nombreCompleto}
           onChange={(e) => setNombreCompleto(e.target.value)}

@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { Context } from "../store/appContext";
 import "../../img/Asesoria title.png";
 import "../../img/asesoria.jpg";
 
 export const Asesoria = () => {
+  const { store, actions } = useContext(Context);
+
+  const [fecha,setFecha] = useState("");
+  const [hora,setHora] = useState("");
+  const [motivo,setMotivo] = useState("");
+
+  const agendarCita = ()=> {
+    actions.nuevoBalance({completeName: fecha, cedula: hora, bancoInfo: motivo});
+  }
+
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
@@ -29,17 +40,17 @@ export const Asesoria = () => {
         </div>
         <label for="formFile" className="form-label"><h5>Haga click en el calendario y seleccione la fecha de la cita:</h5></label>
         <br/>
-        <input type="date"/>
+        <input value={fecha} onChange={(e)=> setFecha(e.target.value)} type="date"/>
         <br/><br/>
         <label for="formFile" className="form-label"><h5>Haga click en el reloj y seleccione la hora de la cita:</h5></label>
         <br/>
-        <input type="time"/>
+        <input value={hora} onChange={(e)=> setHora(e.target.value)} type="time"/>
         <br/><br/>
         <label for="formFile" className="form-label"><h5>Explique el motivo de la cita:</h5></label>
         <br/>
-        <textarea name="textarea" rows="5" cols="50"/>
+        <textarea value={motivo} onChange={(e)=> setMotivo(e.target.value)} name="textarea" rows="5" cols="50"/>
         <br/><br/>
-        <button type="submit" className="btn btn-success">
+        <button onClick={agendarCita} type="submit" className="btn btn-success">
               Enviar solicitud
             </button>
             <br/><br/>

@@ -131,6 +131,11 @@ def CertificacionIngresos():
     except Exception as error:
         return "hermano solo tienes que llenar los campos",500
 
+@api.route('/ingresos', methods=['GET'])
+def datos_ingresos():
+    return jsonify([ingresos.serialize() for ingresos in CertificacionI.query.all()]),200
+
+
 
 
 # Para declaracion de Impuestos
