@@ -22,20 +22,13 @@ export const BalanceDatos = () => {
         <h1>Datos del Balance Personal solicitado:</h1>
         </div>
       <div className="valores d-flex flex-row">
-        {/* <label for="formFile" className="form-label"><h5>Nombre completo:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Cédula de identidad:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Información bancaria:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Cantidad de vehículos que posee:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Cantidad de propiedades que posee:</h5></label> */}
         <br/><br/>
         {store.listaBalances.map((solicitud,index)=>
         <div className="card mx-3" key={index}>
         <div className="card-body">
-        <h5 className="card-title">Solicitud de {solicitud.cedula} {index+1}</h5>
+        <h5 className="card-title">Solicitud N. {index+1}</h5>
+        <h5 className="card-title">Hecha por: {solicitud.completeName}</h5>
+        <h5 className="card-title">Cédula: {solicitud.cedula}</h5>
         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <button className="btn btn-primary">Go somewhere</button>
         </div>

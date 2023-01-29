@@ -76,12 +76,14 @@ export const Navbar = () => {
               </ul>
             </li>
           </ul>
+          {store.token && (
           <Link to="/">
             <button className="btn register d-flex align-items-center" onClick={() => actions.logout()}>
               Salir &nbsp;               
               <i className="fa-solid fa-right-from-bracket"/>
             </button>
           </Link>
+          )}
         </div>
       </div>
     </nav>

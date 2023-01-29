@@ -13,6 +13,7 @@ h1,h2,h4,h5,p,input,span,label,textarea{
     justify-content:center;
     align-items: center;
     background-image: url(https://raw.githubusercontent.com/JulioCBC13/Proyecto-Final/main/src/front/img/fondo-prueba.png);
+    z-index: -2;
   }
 
   .contact{

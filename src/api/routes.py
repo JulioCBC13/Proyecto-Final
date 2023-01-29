@@ -2,7 +2,7 @@
 This module takes care of starting the API Server, Loading the DB and Adding the endpoints
 """
 from flask import Flask, request, jsonify, url_for, Blueprint
-from api.models import db, User, Contador, BalanceP
+from api.models import db, User, Contador, BalanceP, CertificacionI, DeclaracionImp, Asesoria
 from api.utils import generate_sitemap, APIException
 from flask_jwt_extended import create_access_token
 
@@ -167,8 +167,13 @@ def DeclaracionImpuestos():
     except Exception as error:
         return "hermano solo tienes que llenar los campos",500
 
+@api.route('/impuestos', methods=['GET'])
+def datos_impuestos():
+    return jsonify([impuestos.serialize() for impuestos in DeclaracionImp.query.all()]),200
 
-@api.route('/asesoria', methods=['POST'])
+# Para Asesorías personalizadas
+
+@api.route('/asesorias', methods=['POST'])
 def Asesoria():
 
     body = request.json
@@ -179,7 +184,6 @@ def Asesoria():
     if "time" not in body :
         return jsonify({"error":"Falto Hora"}), 400
     
-
     nuevo_asesoria = Asesoria(body["completeName"],body["date"],body["time"])
     
     try:
@@ -190,3 +194,7 @@ def Asesoria():
 
     except Exception as error:
         return "hermano solo tienes que llenar los campos",500
+
+@api.route('/asesorias', methods=['GET'])
+def datos_asesorias():
+    return jsonify([asesorias.serialize() for asesorias in Asesoria.query.all()]),200

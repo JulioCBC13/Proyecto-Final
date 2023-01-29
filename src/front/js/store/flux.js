@@ -3,6 +3,8 @@ const getState = ({ getStore, getActions, setStore }) => {
     store: {
       listaBalances:[],
       listaIngresos:[],
+      listaImpuestos:[],
+      listaAsesorias:[],
       message: null,
       token: localStorage.getItem("token"),
       demo: [
@@ -141,6 +143,18 @@ const getState = ({ getStore, getActions, setStore }) => {
         console.log(data);
         setStore({listaIngresos: data})
       },
+      loadImpuestos: async()=>{
+        const resp = await fetch(process.env.BACKEND_URL + "/api/impuestos")
+        const data = await resp.json();
+        console.log(data);
+        setStore({listaImpuestos: data})
+      },
+      loadAsesorias: async()=>{
+        const resp = await fetch(process.env.BACKEND_URL + "/api/asesorias")
+        const data = await resp.json();
+        console.log(data);
+        setStore({listaAsesorias: data})
+      },
 
       
       
@@ -165,6 +179,30 @@ const getState = ({ getStore, getActions, setStore }) => {
             // 'Content-Type': 'application/x-www-form-urlencoded',
           },
           body: JSON.stringify(ingresos),
+        });
+      },
+
+      nuevaDeclaraImpuestos: async (impuestos)=>{
+        console.log("se creó la declaración de impuestos",impuestos);
+        const resp = await fetch(process.env.BACKEND_URL + "/api/impuestos", {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: JSON.stringify(impuestos),
+        });
+      },
+
+      nuevaAsesoria: async (asesoria)=>{
+        console.log("se creó la cita para asesoria personalizada",asesoria);
+        const resp = await fetch(process.env.BACKEND_URL + "/api/asesorias", {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: JSON.stringify(asesoria),
         });
       }
 

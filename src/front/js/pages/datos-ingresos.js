@@ -1,8 +1,14 @@
-import React from "react";
+import React,{ useContext, useEffect } from "react";
+import { Context } from "../store/appContext";
 import "../../img/Ingresos datos.png";
 import "../../img/ingresos.jpg";
 
 export const IngresosDatos = () => {
+  const { store, actions } = useContext(Context);
+  useEffect(()=>{
+    actions.loadIngresos();
+  },[])
+
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
@@ -23,18 +29,20 @@ export const IngresosDatos = () => {
         </div>
       </div>
       <br/><br/>
-      <div className="valores">
       <div>
         <h1>Datos de la Certificación de Ingresos solicitada:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Nombre completo:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Cédula de identidad:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingreso promedio mensual:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Profesión u ocupación:</h5></label>
-        <br/><br/>
+      <div className="valores d-flex flex-row">
+      <br/><br/>
+        {store.listaIngresos.map((solicitud,index)=>
+        <div className="card mx-3" key={index}>
+        <div className="card-body">
+        <h5 className="card-title">Solicitud de {solicitud.cedula} {index+1}</h5>
+        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button className="btn btn-primary">Go somewhere</button>
+        </div>
+        </div>  
+        )  } 
       </div>
     </div>
   );
