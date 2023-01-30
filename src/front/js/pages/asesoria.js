@@ -12,7 +12,7 @@ export const Asesoria = () => {
 
   const agendarCita = async ()=> {
     actions.nuevaAsesoria({
-      completeName: motivo,
+      motivo: motivo,
       date: fecha,
       time: hora,
     });

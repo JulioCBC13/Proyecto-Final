@@ -177,14 +177,14 @@ def datos_impuestos():
 def nueva_asesoria():
 
     body = request.json
-    if "completeName" not in body :
+    if "motivo" not in body :
         return jsonify({"error":"Falto Nombre Completo"}), 400
     if "date" not in body :
         return jsonify({"error":"Falto Dia"}), 400
     if "time" not in body :
         return jsonify({"error":"Falto Hora"}), 400
     
-    nuevo_asesoria = Asesoria(body["completeName"],body["date"],body["time"])
+    nuevo_asesoria = Asesoria(body["motivo"],body["date"],body["time"])
     
     try:
         db.session.add(nuevo_asesoria)

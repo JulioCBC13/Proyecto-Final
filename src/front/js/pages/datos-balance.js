@@ -28,7 +28,11 @@ export const BalanceDatos = () => {
         <h5 className="card2-title">Solicitud N. {index+1}</h5>
         <h5 className="card2-title">Hecha por: {solicitud.completeName}</h5>
         <h5 className="card2-title">Cédula: {solicitud.cedula}</h5>
-        <h5 className="card2-title">Información Bancaria: {solicitud.bancoInfo}</h5>
+        <h5 className="card2-title">Información Bancaria:<br/>
+        <a href={solicitud.bancoInfo} target="_blank">
+          <i class="fa-solid fa-file-pdf fa-2x"/>
+        </a>
+        </h5>
         <h5 className="card2-title">Vehículos: {solicitud.vehiculosAmount}</h5>
         <h5 className="card2-title">Propiedades: {solicitud.propiedadesAmount}</h5>
         <button className="btn btn-primary">Procesar</button>

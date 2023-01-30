@@ -27,7 +27,7 @@ export const AsesoriaDatos = () => {
        <h5 className="card3-title">Solicitud N. {index+1}</h5>
        <h5 className="card3-title">Fecha: {solicitud.date}</h5>
        <h5 className="card3-title">Hora: {solicitud.time}</h5>
-       <h5 className="card3-title">Motivo: {solicitud.completeName}</h5>
+       <h5 className="card3-title">Motivo: {solicitud.motivo}</h5>
        <button className="btn btn-primary">Procesar</button>
        </div>
        </div>  

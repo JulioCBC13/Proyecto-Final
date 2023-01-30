@@ -170,7 +170,7 @@ class Asesoria(db.Model):
     
    
 
-    def __init__(self,completeName,date,time):
+    def __init__(self,motivo,date,time):
         self.motivo = motivo
         self.date = date
         self.time = time
@@ -180,6 +180,6 @@ class Asesoria(db.Model):
         return {
             "motivo" : self.motivo,
             "date" : self.date,
-            "time" : self.time
+            "time" : str(self.time)
         } 
     
