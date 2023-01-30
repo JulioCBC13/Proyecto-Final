@@ -10,9 +10,13 @@ export const Asesoria = () => {
   const [hora,setHora] = useState("");
   const [motivo,setMotivo] = useState("");
 
-  const agendarCita = ()=> {
-    actions.nuevoBalance({completeName: fecha, cedula: hora, bancoInfo: motivo});
-  }
+  const agendarCita = async ()=> {
+    actions.nuevaAsesoria({
+      completeName: motivo,
+      date: fecha,
+      time: hora,
+    });
+  };
 
   return (
     <div className="agendar">
@@ -38,15 +42,15 @@ export const Asesoria = () => {
       <div>
             <h1>Agende una cita a continuación:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Haga click en el calendario y seleccione la fecha de la cita:</h5></label>
+        <label className="form-label"><h5>Haga click en el calendario y seleccione la fecha de la cita:</h5></label>
         <br/>
         <input value={fecha} onChange={(e)=> setFecha(e.target.value)} type="date"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Haga click en el reloj y seleccione la hora de la cita:</h5></label>
+        <label className="form-label"><h5>Haga click en el reloj y seleccione la hora de la cita:</h5></label>
         <br/>
         <input value={hora} onChange={(e)=> setHora(e.target.value)} type="time"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Explique el motivo de la cita:</h5></label>
+        <label className="form-label"><h5>Explique el motivo de la cita:</h5></label>
         <br/>
         <textarea value={motivo} onChange={(e)=> setMotivo(e.target.value)} name="textarea" rows="5" cols="50"/>
         <br/><br/>

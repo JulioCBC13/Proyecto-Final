@@ -9,7 +9,6 @@ export const BalanceDatos = () => {
     actions.loadBalances();
   },[])
 
-
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
@@ -19,26 +18,25 @@ export const BalanceDatos = () => {
       </div>
       <br/><br/>
       <div>
-        <h1>Datos del Balance Personal solicitado:</h1>
+        <h1>Datos de los Balances Personales solicitados:</h1>
         </div>
       <div className="valores d-flex flex-row">
         <br/><br/>
         {store.listaBalances.map((solicitud,index)=>
-        <div className="card mx-3" key={index}>
-        <div className="card-body">
-        <h5 className="card-title">Solicitud N. {index+1}</h5>
-        <h5 className="card-title">Hecha por: {solicitud.completeName}</h5>
-        <h5 className="card-title">Cédula: {solicitud.cedula}</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <button className="btn btn-primary">Go somewhere</button>
+        <div className="card2 mx-3" key={index}>
+        <div className="card2-body px-2 py-2">
+        <h5 className="card2-title">Solicitud N. {index+1}</h5>
+        <h5 className="card2-title">Hecha por: {solicitud.completeName}</h5>
+        <h5 className="card2-title">Cédula: {solicitud.cedula}</h5>
+        <h5 className="card2-title">Información Bancaria: {solicitud.bancoInfo}</h5>
+        <h5 className="card2-title">Vehículos: {solicitud.vehiculosAmount}</h5>
+        <h5 className="card2-title">Propiedades: {solicitud.propiedadesAmount}</h5>
+        <button className="btn btn-primary">Procesar</button>
         </div>
         </div>  
         )  }    
-</div>
-
-<br/><br/>
-
-
+      </div>
+      <br/><br/>
     </div>
   );
 };

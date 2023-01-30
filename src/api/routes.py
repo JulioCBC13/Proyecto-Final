@@ -174,7 +174,7 @@ def datos_impuestos():
 # Para Asesorías personalizadas
 
 @api.route('/asesorias', methods=['POST'])
-def Asesoria():
+def nueva_asesoria():
 
     body = request.json
     if "completeName" not in body :

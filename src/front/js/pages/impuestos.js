@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { Context } from "../store/appContext";
 import "../../img/Impuestos title.png";
 import "../../img/impuestos.png";
 
 export const Impuestos = () => {
+  const { store, actions } = useContext(Context);
+
+  const [nombreCompleto, setNombreCompleto] = useState("");
+  const [Cedula, setCedula] = useState("");
+  const [ingresos, setIngresos] = useState("");
+  const [costos, setCostos] = useState("");
+  const [gastos, setGastos] = useState("");
+
+  const crearDeclaraImpuestos = async () => {
+    actions.nuevaDeclaraImpuestos({
+      completeName: nombreCompleto,
+      cedula: Cedula,
+      ingresos: ingresos,
+      costos: costos,
+      gastos: gastos,
+    });
+  };
+
+
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
@@ -26,27 +46,27 @@ export const Impuestos = () => {
       <div>
             <h1>Solicite una Declaración de Impuestos a continuación:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Ingrese su nombre completo:</h5></label>
+        <label className="form-label"><h5>Ingrese su nombre completo:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={nombreCompleto} onChange={(e) => setNombreCompleto(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
+        <label className="form-label"><h5>Ingrese su número de cédula de identidad:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={Cedula} onChange={(e) => setCedula(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Indique sus ingresos:</h5></label>
+        <label className="form-label"><h5>Indique sus ingresos:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={ingresos} onChange={(e) => setIngresos(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Indique sus costos:</h5></label>
+        <label className="form-label"><h5>Indique sus costos:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={costos} onChange={(e) => setCostos(e.target.value)} type="text"/>
         <br/><br/>
-        <label for="formFile" className="form-label"><h5>Indique sus gastos:</h5></label>
+        <label className="form-label"><h5>Indique sus gastos:</h5></label>
         <br/>
-        <input type="text"/>
+        <input value={gastos} onChange={(e) => setGastos(e.target.value)} type="text"/>
         <br/><br/>
-        <button type="submit" className="btn btn-success">
+        <button onClick={crearDeclaraImpuestos} type="submit" className="btn btn-success">
               Enviar solicitud
             </button>
             <br/><br/>

@@ -1,8 +1,13 @@
-import React from "react";
+import React,{ useContext, useEffect } from "react";
+import { Context } from "../store/appContext";
 import "../../img/Impuestos datos.png";
 import "../../img/impuestos.png";
 
 export const ImpuestosDatos = () => {
+  const { store, actions } = useContext(Context);
+  useEffect(()=>{
+    actions.loadImpuestos();
+  },[])
   return (
     <div className="agendar">
       <div className="title-page d-flex justify-content-between align-items-center">
@@ -10,33 +15,27 @@ export const ImpuestosDatos = () => {
         <br />
         <img src="Impuestos datos.png" alt="Servicios" />
       </div>      
-      <div className="descripcion">
-        <img src="impuestos.png" width="450" height="250" alt="images" />
-        <div className="texto1">
-          <h4>
-          Las declaraciones de impuestos son documentos que se presentan ante los
-            organimos de recaudación gubernamentales. Éstos deben reflejar la cantidad de
-            ingresos obtenidos durante el último año, de modo que en base a ellos se 
-            calcule la cantidad de tributos a cancelar por el contribuyente.
-          </h4>
-        </div>
-      </div>
       <br/><br/>
-      <div className="valores">
       <div>
         <h1>Datos de la Declaración de Impuestos solicitada:</h1>
         </div>
-        <label for="formFile" className="form-label"><h5>Nombre completo:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Cédula de identidad:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Ingresos:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Costos:</h5></label>
-        <br/><br/>
-        <label for="formFile" className="form-label"><h5>Gastos:</h5></label>
-        <br/><br/>
+      <div className="valores d-flex flex-row">
+      <br/><br/>
+      {store.listaImpuestos.map((solicitud,index)=>
+       <div className="card3 mx-3" key={index}>
+       <div className="card3-body px-2 py-2">
+       <h5 className="card3-title">Solicitud N. {index+1}</h5>
+       <h5 className="card3-title">Hecha por: {solicitud.completeName}</h5>
+       <h5 className="card3-title">Cédula: {solicitud.cedula}</h5>
+       <h5 className="card3-title">Ingresos: {solicitud.ingresos}</h5>
+       <h5 className="card3-title">Costos: {solicitud.costos}</h5>
+       <h5 className="card3-title">Gastos: {solicitud.gastos}</h5>
+       <button className="btn btn-primary">Procesar</button>
+       </div>
+       </div>   
+        )  } 
       </div>
+      <br/><br/>
     </div>
   );
 };
