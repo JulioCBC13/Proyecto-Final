@@ -350,7 +350,7 @@ export const Home = () => {
 
               {/*<!-- Testimonial section
             <div className="py-5 bg-light">
-              <div class="container px-5 my-5">
+              <div className="container px-5 my-5">
                 <div class="row gx-5 justify-content-center">
                   <div class="col-lg-10 col-xl-7">
                     <div class="text-center">
@@ -380,91 +380,91 @@ export const Home = () => {
               
               {/*<!-- Call to action-->*/}
 
-              <div class="accordion" id="accordionExample">
+              <div className="accordion" id="accordionExample">
               <div className="text-center">
                   <h1 className="fw-bold ">PREGUNTAS FRECUENTES</h1>
                 </div>
 
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingOne">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         ¿Por qué necesito un contador?
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
       Si trabajas de forma independiente necesitarás Inscripción en el SENIAT, presentar declaraciones juradas y mantenerte constantemente actualizado. Contar con el conocimiento de un especialista te permitirá reducir riesgos, ahorrar mucho tiempo y tomar decisiones acertadas.
       </div>
     </div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingTwo">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         ¿Puedo contar con un contador online?
       </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
       Claro! Es la forma más eficiente de tener asesoramiento oportuno y siempre disponible.
       </div>
     </div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingThree">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         ¿Cuánto cuesta un contador online?
       </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
       Nos especializamos en emprendedores, e-commerce y empresas digitales. Contamos con planes especialmente pensados para cada actividad. A través de una breve llamada, te recomendaremos la propuesta que mejor se adapte a tu necesidad. Contrata Valor.
       </div>
     </div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingFour">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
       ¿Cuánto tiempo tengo para declarar las retenciones de ISLR siendo contribuyente ordinario?
       </button>
     </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
       Todas las retenciones aplicadas en un periodo son declaradas al mes posterior de las misma y tendrás tiempo de declararlas dentro de los 10 primeros días corrientes de cada mes si eres contribuyente ordinario.
       </div>
     </div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingFive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingFive">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
       ¿Quiénes están sujetos a pagar el IGTF?
       </button>
     </h2>
-    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
       Todas las personas naturales y jurídicas están sujetas al IGTF cuando pagan en divisas o cualquier instrumento monetario diferente al bolívar o criptomonedas distintas al Petro.
       </div>
     </div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingSix">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingSix">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
       ¿Cuál es la alícuota de este impuesto y sobre qué base se calcula?
       </button>
     </h2>
-    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
       La alícuota del IGTF es del 0,75% y aplica sobre el importe total de los débitos en cuenta o de las operaciones gravadas. El IGTF será determinado diariamente. Existe la obligación de pagar el IGTF cuando ocurra el pago o cancelación de una cuenta o deuda. la base imponible del IGTF es el importe total pagado en moneda extranjera y/o Criptoactivos, excluyendo las retenciones de impuesto sobre la renta e IVA, las cuales claramente no forman parte de lo pagado en moneda extranjera y/o Criptoactivos.
       </div>
     </div>
   </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingSeven">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingSeven">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
       ¿Todos los comercios deben cobrar este impuesto?
       </button>
     </h2>
-    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+    <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
       No. Solo los comercios o empresas que hayan sido designados sujetos pasivos especiales tienen el deber de ser agentes de percepción del IGTF por los pagos que reciban en moneda extranjera.
       </div>
     </div>
